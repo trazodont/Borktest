@@ -253,10 +253,6 @@
 		return "Puzzling"
 
 /mob/living/carbon/human/proc/get_generic_name(prefixed = FALSE, lowercase = FALSE)
-		if(real_name)
-    		return real_name
- 		 else
-   			 return name
 	var/final_string = ""
 	var/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
