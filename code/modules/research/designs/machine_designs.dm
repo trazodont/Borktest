@@ -254,6 +254,14 @@
 	build_path = /obj/item/circuitboard/machine/rdserver
 	category = list("Research Machinery", "initial", "Equipment")
 
+/datum/design/board/circuit_imprinter
+	name = "Departmental Circuit Imprinter (Machine Board)"
+	desc = "The circuit board for a circuit imprinter, ironic."
+	id = "dcimprinter"
+	build_type = AUTOLATHE | IMPRINTER
+	build_path = /obj/item/circuitboard/machine/circuit_imprinter/department
+	category = list("initial")
+
 /datum/design/board/mechfab
 	name = "Machine Design (Exosuit Fabricator Board)"
 	desc = "The circuit board for an Exosuit Fabricator."
