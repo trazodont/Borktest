@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(spider_last, world.file2list("strings/names/spider_last.txt"))
 	id = SPECIES_RACHNID
 	sexes = 0
 	default_color = "00FF00"
-	species_traits = list(LIPS, NOEYESPRITES, MUTCOLORS_PARTSONLY)
+	species_traits = list(LIPS, NOEYESPRITES, MUTCOLORS_PARTSONLY,HAIR,FACEHAIR)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
 	mutant_bodyparts = list("spider_legs", "spider_spinneret")
 	default_features = list("spider_legs" = "Carapaced", "spider_spinneret" = "Plain", "body_size" = "Normal")
