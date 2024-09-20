@@ -181,3 +181,13 @@
 		if(!message)
 			return
 	return message
+
+/mob/verb/toggle_auto_capitalization()
+	set desc = "Toggles auto capitalization of chat messages"
+	set name = "Toggle Auto Capitalization"
+
+	if (!usr.client)
+		return
+
+	usr.client.preferences.auto_capitalization = !usr.client.preferences.auto_capitalization
+	boutput(usr, SPAN_NOTICE("[usr.client.preferences.auto_capitalization ? "Now": "No Longer"] auto capitalizing messages."))
