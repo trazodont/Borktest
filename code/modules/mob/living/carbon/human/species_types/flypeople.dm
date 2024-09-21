@@ -1,7 +1,7 @@
 /datum/species/fly
 	name = "\improper Flyperson"
 	id = SPECIES_FLYPERSON
-	species_traits = list(NOEYESPRITES,TRAIT_ANTENNAE)
+	species_traits = list(NOEYESPRITES,TRAIT_ANTENNAE,HAIR,FACEHAIR)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID|MOB_BUG
 	mutanttongue = /obj/item/organ/tongue/fly
 	mutantliver = /obj/item/organ/liver/fly
