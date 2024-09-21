@@ -554,3 +554,15 @@ GLOBAL_LIST_INIT(ghost_orbits, list(GHOST_ORBIT_CIRCLE,GHOST_ORBIT_TRIANGLE,GHOS
 	prefs.whois_visible = !prefs.whois_visible
 	to_chat(src, span_notice("You are [(prefs.whois_visible ? "now" : "no longer")] visible to WhoIs topic calls."))
 	prefs.save_preferences()
+
+/client/verb/toggle_auto_capitalization()
+	set desc = "Toggles auto capitalization of chat messages"
+	set name = "Toggle Auto Capitalization"
+	set category = "Preferences"
+
+	if (!usr.client)
+		return
+
+	prefs.auto_capitalization = !usr.client.prefs.auto_capitalization
+	to_chat(src, "[usr.client.prefs.auto_capitalization ? "Now": "No longer"] auto capitalizing messages.",confidential = TRUE)
+	prefs.save_preferences()
