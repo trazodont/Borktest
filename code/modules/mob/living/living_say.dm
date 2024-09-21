@@ -355,13 +355,13 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(clockcultslurring) //Shiptest edit
 		message = CLOCK_CULT_SLUR(message)
 
-
 	// check for and apply punctuation. thanks, bee
-	var/end = copytext(message, length(message))
-	if(!(end in list("!", ".", "?", ":", "\"", "-")))
-		message += "."
+	if (!client || client.prefs.auto_capitalization)
+		var/end = copytext(message, length(message))
+		if(!(end in list("!", ".", "?", ":", "\"", "-")))
+			message += "."
 
-	message = capitalize(message)
+		message = capitalize(message)
 
 	return message
 
