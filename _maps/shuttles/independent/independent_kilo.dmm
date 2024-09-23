@@ -1832,8 +1832,10 @@
 /obj/item/cutting_board{
 	anchored = 1
 	},
-/obj/item/kitchen/knife,
-/turf/open/floor/plasteel/white,
+/obj/item/melee/knife/kitchen,
+/obj/effect/turf_decal/corner/transparent/beige/full,
+/obj/effect/turf_decal/corner/transparent/brown/diagonal,
+/turf/open/floor/plasteel,
 /area/ship/crew)
 "Ti" = (
 /obj/structure/grille,
