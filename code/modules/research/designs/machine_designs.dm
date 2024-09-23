@@ -262,6 +262,14 @@
 	build_path = /obj/item/circuitboard/machine/circuit_imprinter/department
 	category = list("initial")
 
+/datum/design/board/department_protolathe
+	name = "Departmental Protolathe (Machine Board)"
+	desc = "A special protolathe with a built in interface meant for departmental usage."
+	id = "departmentproto"
+	build_type = IMPRINTER
+	build_path = /obj/item/circuitboard/machine/protolathe/department
+	category = list("Engineering Machinery")
+
 /datum/design/board/mechfab
 	name = "Machine Design (Exosuit Fabricator Board)"
 	desc = "The circuit board for an Exosuit Fabricator."
