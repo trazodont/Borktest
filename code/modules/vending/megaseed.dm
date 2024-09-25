@@ -11,6 +11,7 @@
 					/obj/item/seeds/cotton = 3,
 					/obj/item/seeds/banana = 3,
 					/obj/item/seeds/berry = 3,
+					/obj/item/seeds/bee_balm = 3,
 					/obj/item/seeds/cabbage = 3,
 					/obj/item/seeds/carrot = 3,
 					/obj/item/seeds/cherry = 3,

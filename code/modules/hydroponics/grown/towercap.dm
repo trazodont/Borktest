@@ -15,6 +15,7 @@
 	growing_icon = 'icons/obj/hydroponics/growing_mushrooms.dmi'
 	icon_dead = "towercap-dead"
 	genes = list(/datum/plant_gene/trait/plant_type/fungal_metabolism)
+	reagents_add = list(/datum/reagent/cellulose = 0.05)
 	mutatelist = list(/obj/item/seeds/tower/steel)
 	research = PLANT_RESEARCH_TIER_0
 
@@ -25,6 +26,7 @@
 	species = "steelcap"
 	plantname = "Steel Caps"
 	product = /obj/item/grown/log/steel
+	reagents_add = list(/datum/reagent/cellulose = 0.05, /datum/reagent/iron = 0.05)
 	mutatelist = list()
 	rarity = 20
 	research = PLANT_RESEARCH_TIER_3

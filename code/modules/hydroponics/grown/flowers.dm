@@ -83,11 +83,6 @@
 	wine_power = 40
 	wine_flavor = "Purple"  //WS edit: new wine flavors. capitalization intentional
 
-/obj/item/seeds/poppy/lily/trumpet/Initialize(mapload,nogenes)
-	. = ..()
-	if(!nogenes)
-		unset_mutability(/datum/plant_gene/reagent/polypyr, PLANT_GENE_EXTRACTABLE)
-
 // Geranium
 /obj/item/seeds/poppy/geranium
 	name = "pack of geranium seeds"
@@ -236,3 +231,60 @@
 	throw_range = 3
 	attack_verb = list("roasted", "scorched", "burned")
 	grind_results = list(/datum/reagent/consumable/capsaicin = 0, /datum/reagent/consumable/condensedcapsaicin = 0)
+// Bee Balm
+/obj/item/seeds/bee_balm
+	name = "pack of bee balm seeds"
+	desc = "These seeds grow into Bee Balm"
+	icon_state = "seed-bee_balm"
+	species = "bee_balm"
+	plantname = "Bee Balm Buds"
+	product = /obj/item/reagent_containers/food/snacks/grown/bee_balm
+	endurance = 10
+	maturation = 8
+	yield = 6
+	potency = 20
+	growthstages = 3
+	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
+	icon_grow = "bee_balm-grow"
+	icon_dead = "bee_balm-dead"
+	mutatelist = list(/obj/item/seeds/bee_balm/honey_balm)
+	reagents_add = list(/datum/reagent/medicine/spaceacillin = 0.1, /datum/reagent/space_cleaner/sterilizine = 0.05)
+
+/obj/item/reagent_containers/food/snacks/grown/bee_balm
+	seed = /obj/item/seeds/bee_balm
+	name = "bee balm"
+	desc = "A flower used for medical antiseptic in history."
+	icon_state = "bee_balm"
+	filling_color = "#FF6347"
+	bitesize_mod = 8
+	foodtype = GROSS
+
+// Honey Balm
+/obj/item/seeds/bee_balm/honey_balm
+	name = "pack of honey balm seeds"
+	desc = "These seeds grow into Bee Balm"
+	icon_state = "seed-honey_balm"
+	species = "honey_balm"
+	plantname = "Honey Balm Pods"
+	product = /obj/item/reagent_containers/food/snacks/grown/bee_balm/honey
+	endurance = 10
+	maturation = 8
+	yield = 6
+	potency = 20
+	growthstages = 3
+	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
+	icon_grow = "honey_balm-grow"
+	icon_dead = "honey_balm-dead"
+	mutatelist = list(/obj/item/seeds/bee_balm/honey_balm)
+	reagents_add = list(/datum/reagent/consumable/honey = 0.1, /datum/reagent/lye = 0.3)
+
+/obj/item/reagent_containers/food/snacks/grown/bee_balm/honey
+	seed = /obj/item/seeds/bee_balm/honey_balm
+	name = "honey balm"
+	desc = "A large honey filled pod of a flower."
+	icon_state = "honey_balm"
+	filling_color = "#FF6347"
+	bitesize_mod = 8
+	tastes = list("wax" = 1)
+	foodtype = SUGAR
+	distill_reagent = /datum/reagent/consumable/ethanol/mead
