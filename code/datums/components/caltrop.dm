@@ -11,13 +11,13 @@
 		COMSIG_ATOM_ENTERED = PROC_REF(on_entered),
 	)
 
-/datum/component/caltrop/Initialize(_min_damage = 0, _max_damage = 0, _probability = 100, _flags = NONE)
+/datum/component/caltrop/Initialize(min_damage = 0, _max_damage = 0, _probability = 100, _flags = NONE)
 	. = ..()
 	if(!isatom(parent))
 		return COMPONENT_INCOMPATIBLE
 
-	min_damage = _min_damage
-	max_damage = max(_min_damage, _max_damage)
+	min_damage = min_damage
+	max_damage = max(min_damage, _max_damage)
 	probability = _probability
 	flags = _flags
 

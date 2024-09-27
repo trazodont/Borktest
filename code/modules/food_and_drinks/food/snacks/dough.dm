@@ -13,6 +13,8 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
+/obj/item/food/dough/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/food/bread/plain, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
 
 // Dough + rolling pin = flat dough
 /obj/item/reagent_containers/food/snacks/dough/attackby(obj/item/I, mob/user, params)
@@ -41,6 +43,9 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
+/obj/item/food/flatdough/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pizzabread, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/pizzabread
 	name = "pizza bread"
 	desc = "Add ingredients to make a pizza."
@@ -65,6 +70,9 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
+/obj/item/food/doughslice/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/bun, rand(20 SECONDS, 25 SECONDS), TRUE, TRUE)
+
 
 /obj/item/reagent_containers/food/snacks/bun
 	name = "bun"
@@ -87,6 +95,9 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	tastes = list("batter" = 1)
 	foodtype = GRAIN | DAIRY
+
+/obj/item/food/cakebatter/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/food/cake/plain, rand(70 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 // Cake batter + rolling pin = pie dough
 /obj/item/reagent_containers/food/snacks/cakebatter/attackby(obj/item/I, mob/user, params)
@@ -113,6 +124,9 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN | DAIRY
 
+/obj/item/food/piedough/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pie/plain, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/rawpastrybase
 	name = "raw pastry base"
 	desc = "Must be cooked before use."
@@ -123,6 +137,9 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = 1)
 	tastes = list("raw pastry" = 1)
 	foodtype = GRAIN | DAIRY
+
+/obj/item/food/rawpastrybase/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pastrybase, rand(20 SECONDS, 25 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/pastrybase
 	name = "pastry base"

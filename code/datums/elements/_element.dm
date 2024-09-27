@@ -16,6 +16,14 @@
  */
 	var/id_arg_index = INFINITY
 
+	var/argument_hash_start_idx = INFINITY
+	/**
+	  * The index of the last attach argument to consider for duplicate elements
+	  * Only used when `element_flags` contains [ELEMENT_BESPOKE].
+	  * If not set, it'll copy every argument from `argument_hash_start_idx` onwards as normal
+	  */
+	var/argument_hash_end_idx = 0
+
 /// Activates the functionality defined by the element on the given target datum
 /datum/element/proc/Attach(datum/target)
 	SHOULD_CALL_PARENT(TRUE)

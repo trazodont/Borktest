@@ -264,6 +264,23 @@ Behavior that's still missing from this component that original food items had t
 		else
 			this_food.reagents.add_reagent(r_id, amount)
 
+///Called when food is crafted through a crafting recipe datum.
+/datum/component/edible/proc/OnCraft(datum/source, list/parts_list, datum/crafting_recipe/food/recipe)
+	SIGNAL_HANDLER
+
+	var/atom/this_food = parent
+
+	for(var/obj/item/food/crafted_part in parts_list)
+		if(!crafted_part.reagents)
+			continue
+		this_food.reagents.maximum_volume += crafted_part.reagents.maximum_volume
+		crafted_part.reagents.trans_to(this_food.reagents, crafted_part.reagents.maximum_volume)
+
+	this_food.reagents.maximum_volume = ROUND_UP(this_food.reagents.maximum_volume) // Just because I like whole numbers for this.
+
+	BLACKBOX_LOG_FOOD_MADE(this_food.type)
+
+
 ///Makes sure the thing hasn't been destroyed or fully eaten to prevent eating phantom edibles
 /datum/component/edible/proc/IsFoodGone(atom/owner, mob/living/feeder)
 	if(QDELETED(owner)|| !(IS_EDIBLE(owner)))
