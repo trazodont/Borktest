@@ -29,7 +29,7 @@
 
 /obj/machinery/oven/Initialize(mapload)
 	. = ..()
-	oven_loop = new(src)
+	oven_loop = new(list(src), FALSE)
 	if(mapload)
 		add_tray_to_oven(new /obj/item/plate/oven_tray(src)) //Start with a tray
 
@@ -193,14 +193,12 @@
 	return TRUE
 
 /obj/machinery/oven/proc/update_baking_audio()
-	if(!oven_loop)
-		return
-	if(appears_active())
-		playsound(src, 'sound/machines/oven/oven_loop_start.ogg', 75, TRUE)
-	else
-		playsound('sound/machines/oven/oven_loop_mid.ogg', 75, TRUE)
-	if(open)
-		playsound('sound/machines/oven/oven_loop_end.ogg', 75, TRUE)
+    if(!oven_loop)
+        return
+    if(appears_active())
+        oven_loop.start()
+    else
+        oven_loop.stop()
 
 ///Updates the smoke state to something else, setting particles if relevant
 /obj/machinery/oven/proc/set_smoke_state(new_state)
