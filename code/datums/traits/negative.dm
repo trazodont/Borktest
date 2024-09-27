@@ -678,3 +678,12 @@
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "bad_touch", /datum/mood_event/very_bad_touch)
 	else
 		SEND_SIGNAL(quirk_holder, COMSIG_ADD_MOOD_EVENT, "bad_touch", /datum/mood_event/bad_touch)
+
+/datum/quirk/anosmia
+	name = "Anosmia"
+	desc = "For some reason, you can't smell anything."
+	value = -2
+	mob_traits = list(TRAIT_ANOSMIA)
+	gain_text = span_notice("You find yourself unable to smell anything!")
+	lose_text = span_danger("Suddenly, you can smell again!")
+	medical_record_text = "Patient has lost their sensation of smell."

@@ -340,6 +340,12 @@
 	build_path = /obj/item/circuitboard/machine/microwave
 	category = list ("Misc. Machinery")
 
+/datum/design/board/oven
+	name = "Machine Design (Oven Board)"
+	desc = "The circuit board for an oven."
+	id = "oven"
+	build_path = /obj/item/circuitboard/machine/oven
+	category = list ("Misc. Machinery")
 
 /datum/design/board/gibber
 	name = "Machine Design (Gibber Board)"

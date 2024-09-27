@@ -622,3 +622,15 @@
 	materials = list(/datum/material/uranium = 1000, /datum/material/plastic = 2000)
 	build_path = /obj/item/fishing_rod/tech
 	category = list("Equipment")
+
+/////////////////////////////////////////
+/////////Kitchen Equipment///////////////
+/////////////////////////////////////////
+
+/datum/design/oven_tray
+	name = "Oven Tray"
+	id = "oven_tray"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 5)
+	build_path = /obj/item/plate/oven_tray
+	category = list("Equipment")

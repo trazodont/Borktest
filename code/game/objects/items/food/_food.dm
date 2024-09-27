@@ -39,6 +39,7 @@
 		eatverbs = string_list(eatverbs)
 	make_edible()
 	make_processable()
+	make_bakeable()
 	make_leave_trash()
 
 ///This proc adds the edible component, overwrite this if you for some reason want to change some specific args like callbacks.
@@ -55,6 +56,10 @@
 		microwaved_type = microwaved_type,\
 	)
 
+///This proc handles bakeable components, overwrite if you want different bake results etc.
+/obj/item/food/proc/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/badrecipe, rand(25 SECONDS, 40 SECONDS), FALSE)
+	return
 
 ///This proc handles processable elements, overwrite this if you want to add behavior such as slicing, forking, spooning, whatever, to turn the item into something else
 /obj/item/food/proc/make_processable()
@@ -65,3 +70,4 @@
 	if(trash_type)
 		AddElement(/datum/element/food_trash, trash_type)
 	return
+

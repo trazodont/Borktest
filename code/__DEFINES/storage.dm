@@ -86,3 +86,10 @@ GLOBAL_LIST_INIT(default_weight_class_to_volume, list(
 #define STORAGE_VOLUME_BACKPACK (DEFAULT_VOLUME_NORMAL * 6) //6 normal items, or 3 bulky items
 #define STORAGE_VOLUME_DUFFLEBAG (DEFAULT_VOLUME_NORMAL * 8) // 2 huge items, or 4 bulky items
 #define STORAGE_VOLUME_BAG_OF_HOLDING (DEFAULT_VOLUME_NORMAL * 9) //1.5X backpack
+
+// Defines for levels of storage locking
+// Also used fort the force param of can_insert
+// Higher values are "more" locked then lower ones
+#define STORAGE_NOT_LOCKED 0
+#define STORAGE_SOFT_LOCKED 1
+#define STORAGE_FULLY_LOCKED 2

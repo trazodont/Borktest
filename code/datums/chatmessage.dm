@@ -21,6 +21,8 @@
 /// Macro from Lummox used to get height from a MeasureText proc
 #define WXH_TO_HEIGHT(x)			text2num(copytext(x, findtextEx(x, "x") + 1))
 
+#define LOWER_TEXT(thing) lowertext(UNLINT("[thing]"))
+
 #define MAPTEXT(text) {"<span class='maptext'>[##text]</span>"}//tg's maptext define.
 /**
  * # Chat Message Overlay

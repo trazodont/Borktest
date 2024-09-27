@@ -241,20 +241,20 @@
 		user.swap_hand(held_index)
 	return TRUE
 
-// /atom/movable/screen/close
-// 	name = "close"
-// 	layer = ABOVE_HUD_LAYER
-// 	plane = ABOVE_HUD_PLANE
-// 	icon_state = "backpack_close"
+/atom/movable/screen/close
+	name = "close"
+	layer = ABOVE_HUD_LAYER
+	plane = ABOVE_HUD_PLANE
+	icon_state = "backpack_close"
 
-// /atom/movable/screen/close/Initialize(mapload, new_master)
-// 	. = ..()
-// 	master = new_master
+/atom/movable/screen/close/Initialize(mapload, new_master)
+ 	. = ..()
+ 	master = new_master
 
-// /atom/movable/screen/close/Click()
-// 	var/datum/component/storage/S = master
-// 	S.hide_from(usr)
-// 	return TRUE
+/atom/movable/screen/close/Click()
+ 	var/datum/component/storage/S = master
+ 	S.ui_hide(usr)
+ 	return TRUE
 
 /atom/movable/screen/drop
 	name = "drop"
