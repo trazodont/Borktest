@@ -49,9 +49,9 @@
 	var/multi_surgery_adjust = 0
 
 	//determine bonus applied
-	if(isalienqueen(target) || isalienroyal(target))
+	if(isalienqueen(target) || isalienroyal(target) || isasteroidelite(target))
 		cost = (BASE_HUMAN_REWARD*38)
-	else if(isalienadult(target))
+	else if(isalienadult(target) || isasteroid(target))
 		cost = (BASE_HUMAN_REWARD*30)
 	else if(ismonkey(target))
 		cost = (BASE_HUMAN_REWARD*0.5)
