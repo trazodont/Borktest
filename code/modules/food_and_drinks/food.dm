@@ -21,6 +21,10 @@
 		pixel_x = rand(-5, 5)
 		pixel_y = rand(-5, 5)
 	ADD_TRAIT(src, FISHING_BAIT_TRAIT, INNATE_TRAIT)
+	make_bakeable()
+
+/obj/item/reagent_containers/food/proc/make_bakeable()
+    return
 
 /obj/item/reagent_containers/food/proc/checkLiked(fraction, mob/M)
 	if(last_check_time + 50 < world.time)

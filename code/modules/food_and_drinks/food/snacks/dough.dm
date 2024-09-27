@@ -13,7 +13,7 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
-/obj/item/reagent_containers/food/snacks/dough/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/dough/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/food/bread/plain, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
 
 // Dough + rolling pin = flat dough
@@ -43,7 +43,7 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
-/obj/item/reagent_containers/food/snacks/flatdough/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/flatdough/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pizzabread, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/pizzabread
@@ -70,7 +70,7 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN
 
-/obj/item/reagent_containers/food/snacks/doughslice/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/doughslice/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/bun, rand(20 SECONDS, 25 SECONDS), TRUE, TRUE)
 
 
@@ -96,7 +96,7 @@
 	tastes = list("batter" = 1)
 	foodtype = GRAIN | DAIRY
 
-/obj/item/reagent_containers/food/snacks/cakebatter/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/cakebatter/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/food/cake/plain, rand(70 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 // Cake batter + rolling pin = pie dough
@@ -124,7 +124,7 @@
 	tastes = list("dough" = 1)
 	foodtype = GRAIN | DAIRY
 
-/obj/item/reagent_containers/food/snacks/piedough/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/piedough/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pie/plain, rand(30 SECONDS, 45 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/rawpastrybase
@@ -138,7 +138,7 @@
 	tastes = list("raw pastry" = 1)
 	foodtype = GRAIN | DAIRY
 
-/obj/item/reagent_containers/food/snacks/rawpastrybase/proc/make_bakeable()
+/obj/item/reagent_containers/food/snacks/rawpastrybase/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/reagent_containers/food/snacks/pastrybase, rand(20 SECONDS, 25 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/pastrybase
