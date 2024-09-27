@@ -81,6 +81,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/exowear = PREF_EXOWEAR			//exowear
 	var/hairstyle = "Bald"				//Hair type
 	var/hair_color = "000"				//Hair color
+	var/antenna_color = "000"
 	var/facial_hairstyle = "Shaved"		//Face hair type
 	var/facial_hair_color = "000"		//Facial hair color
 	var/skin_tone = "caucasian1"		//Skin color
@@ -671,7 +672,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<a href='?_src_=prefs;preference=ipc_antenna;task=input'>[features["ipc_antenna"]]</a><BR>"
 
-				dat += "<span style='border:1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a><BR>"
+				dat += "<span style='border:1px solid #161616; background-color: #[antenna_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=antenna_color;task=input'>Change</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1625,6 +1626,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					age = rand(pref_species.species_age_min, pref_species.species_age_max)
 				if("hair")
 					hair_color = random_color_natural()
+				if ("antenna_color")
+					antenna_color = random_color_natural()
 				if("hairstyle")
 					hairstyle = random_hairstyle(gender)
 				if("facial")
@@ -1831,6 +1834,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_eyes)
 						eye_color = sanitize_hexcolor(new_eyes)
 
+				if ("antenna_color")
+					var/new_antenna = input(user, "Choose your character's antenna color:", "Character Preference","#"+antenna_color) as color|null
+					if (new_antenna)
+						antenna_color = sanitize_hexcolor(new_antenna)
 				if("body_size")
 					var/new_size = input(user, "Choose your character's height:", "Character Preference") as null|anything in GLOB.body_sizes
 					if(new_size)
@@ -2471,6 +2478,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.gender = gender
 	character.age = clamp(age, pref_species.species_age_min, pref_species.species_age_max)
 	character.eye_color = eye_color
+	character.antenna_color = antenna_color
 	var/obj/item/organ/eyes/organ_eyes = character.getorgan(/obj/item/organ/eyes)
 	if(organ_eyes)
 		if(!initial(organ_eyes.eye_color))

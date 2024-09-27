@@ -562,10 +562,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/hair_hidden = FALSE //ignored if the matching dynamic_X_suffix is non-empty
 	var/facialhair_hidden = FALSE // ^
 
-	//for augmented heads
-	if(!IS_ORGANIC_LIMB(HD))
-		return
-
 	//we check if our hat or helmet hides our facial hair.
 	if(H.head)
 		var/obj/item/I = H.head
@@ -1022,6 +1018,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 							accessory_overlay.color = "#[H.facial_hair_color]"
 						if(EYECOLOR)
 							accessory_overlay.color = "#[H.eye_color]"
+						if(ANTENNACOLOR)
+							accessory_overlay.color = "#[H.antenna_color]"
+
 				else
 					accessory_overlay.color = forced_colour
 			standing += accessory_overlay
