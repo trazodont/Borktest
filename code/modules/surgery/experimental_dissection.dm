@@ -49,12 +49,16 @@
 	var/multi_surgery_adjust = 0
 
 	//determine bonus applied
-	if(isalienqueen(target) || isalienroyal(target) || isasteroidelite(target))
+	if(isalienqueen(target) || isalienroyal(target))
 		cost = (BASE_HUMAN_REWARD*38)
-	else if(isalienadult(target) || isasteroid(target))
+	else if(isalienadult(target))
 		cost = (BASE_HUMAN_REWARD*30)
 	else if(ismonkey(target))
 		cost = (BASE_HUMAN_REWARD*0.5)
+	else if (isasteroidelite(target))
+		cost = (BASE_HUMAN_REWARD*5)
+	else if(isasteroid(target))
+		cost = (BASE_HUMAN_REWARD*2.5)
 	else if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(H?.dna?.species)
