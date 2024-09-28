@@ -4,7 +4,10 @@
 	initial_language_holder = /datum/language_holder/monkey
 	possible_a_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_HARM)
 	icon = 'icons/mob/monkey.dmi'
-	icon_state = null
+	icon_state = "monkey"
+	held_state = "monkey"
+	head_icon = 'icons/mob/pets_held.dmi'
+	worn_slot_flags = ITEM_SLOT_HEAD
 	gender = NEUTER
 	pass_flags = PASSTABLE
 	ventcrawler = VENTCRAWLER_NUDE
@@ -87,6 +90,11 @@
 		if(health_deficiency >= 45)
 			slow += (health_deficiency / 25)
 		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/monkey_health_speedmod, TRUE, slow)
+
+/mob/living/carbon/monkey/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_HOLDABLE, INNATE_TRAIT)
+	add_verb(src, /mob/living/proc/toggle_resting)
 
 /mob/living/carbon/monkey/adjust_bodytemperature(amount, min_temp=0, max_temp=INFINITY, use_insulation=FALSE, use_steps=FALSE)
 	. = ..()
