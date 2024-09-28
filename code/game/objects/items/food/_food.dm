@@ -39,6 +39,7 @@
 		eatverbs = string_list(eatverbs)
 	make_edible()
 	make_processable()
+	make_grillable()
 	make_bakeable()
 	make_leave_trash()
 
@@ -71,3 +72,7 @@
 		AddElement(/datum/element/food_trash, trash_type)
 	return
 
+///This proc handles grillable components, overwrite if you want different grill results etc.
+/obj/item/food/proc/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/badrecipe, rand(20 SECONDS, 30 SECONDS), FALSE)
+	return

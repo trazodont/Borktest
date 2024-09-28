@@ -491,6 +491,14 @@
 	color = "#FFB500"
 	taste_description = "egg"
 
+/datum/reagent/consumable/eggwhite
+	name = "Egg White"
+	description = "It's full of even more protein."
+	nutriment_factor = 4 * REAGENTS_METABOLISM
+	color = "#fffdf7"
+	taste_description = "bland egg"
+	can_synth = TRUE
+
 /datum/reagent/consumable/corn_starch
 	name = "Corn Starch"
 	description = "A slippery solution."
@@ -812,3 +820,10 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	taste_description = "peanut"
 	reagent_state = SOLID
+
+/datum/reagent/consumable/pancakebatter
+	name = "Pancake Batter"
+	description = "A very milky batter. 5 units of this on the griddle makes a mean pancake."
+	taste_description = "milky batter"
+	color = "#fccc98"
+	can_synth = TRUE

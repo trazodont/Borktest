@@ -136,3 +136,7 @@
 /datum/chemical_reaction/bbqsauce
 	results = list(/datum/reagent/consumable/bbqsauce = 5)
 	required_reagents = list(/datum/reagent/ash = 1, /datum/reagent/consumable/tomatojuice = 1, /datum/reagent/medicine/salglu_solution = 3, /datum/reagent/consumable/blackpepper = 1)
+
+/datum/chemical_reaction/food/pancakebatter
+	results = list(/datum/reagent/consumable/pancakebatter = 15)
+	required_reagents = list(/datum/reagent/consumable/eggyolk = 6, /datum/reagent/consumable/eggwhite = 12, /datum/reagent/consumable/milk = 10, /datum/reagent/consumable/flour = 5)

@@ -1276,6 +1276,13 @@
 	req_components = list(/obj/item/stock_parts/micro_laser = 1,)
 	needs_anchored = TRUE
 
+/obj/item/circuitboard/machine/griddle
+	name = "Griddle (Machine Board)"
+	icon_state = "service"
+	build_path = /obj/machinery/griddle
+	req_components = list(/obj/item/stock_parts/micro_laser = 1,)
+	needs_anchored = TRUE
+
 /obj/item/circuitboard/machine/plantgenes
 	name = "Plant DNA Manipulator (Machine Board)"
 	icon_state = "service"
