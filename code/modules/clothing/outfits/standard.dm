@@ -150,7 +150,7 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman
 	uniform = /obj/item/clothing/under/plasmaman
-	r_hand= /obj/item/tank/internals/plasmaman/belt/full
+	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 	gloves = /obj/item/clothing/gloves/color/plasmaman
 
