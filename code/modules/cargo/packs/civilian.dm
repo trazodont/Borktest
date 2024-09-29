@@ -50,6 +50,26 @@
 	crate_type = /obj/structure/closet/crate/large
 
 /*
+		Hydroponics
+*/
+
+/datum/supply_pack/civilian/MegaSeed
+	name = "MegaSeed Vending Machine"
+	desc = "A vending machine full of seeds"
+	cost = 800
+	contains = list(/obj/machinery/vending/hydroseeds)
+	crate_name = "MegaSeed vending machine crate"
+	crate_type = /obj/structure/closet/crate/large
+
+/datum/supply_pack/civilian/NutriMax
+	name = "NutriMax Vending Machine"
+	desc = "A vending machine full of nutrients"
+	cost = 800
+	contains = list(/obj/machinery/vending/hydronutrients)
+	crate_name = "NutriMax vending machine crate"
+	crate_type = /obj/structure/closet/crate/large
+
+/*
 		Bundles
 */
 
