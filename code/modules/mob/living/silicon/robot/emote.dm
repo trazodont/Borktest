@@ -51,3 +51,24 @@
 	key = "yes"
 	message = "emits an affirmative blip."
 	sound = 'sound/machines/synth_yes.ogg'
+
+/datum/emote/living/silicon/scream
+	key = "scream"
+	key_third_person = "screams"
+	message = "screams!"
+	sound = 'sound/voice/silicon/robot_scream.ogg'
+	mob_type_allowed_typecache = list(/mob/living/silicon)
+
+/datum/emote/living/silicon/laugh
+	key = "laugh"
+	key_third_person = "laughs"
+	message = "laughs."
+	sound = 'sound/voice/silicon/robot_laugh.ogg'
+	mob_type_allowed_typecache = list(/mob/living/silicon)
+
+/datum/emote/living/silicon/fart
+	key = "fart"
+	key_third_person = "farts"
+	message = "makes a synthetic"
+	sound = 'sound/voice/silicon/poo2_robot.ogg'
+	mob_type_allowed_typecache = list(/mob/living/silicon)

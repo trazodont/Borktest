@@ -292,6 +292,7 @@ slimy
 slippery
 slow
 small
+smelly
 smiling
 smoggy
 smooth
@@ -309,6 +310,7 @@ stale
 steady
 steep
 sticky
+stinky
 stormy
 straight
 strange

@@ -279,6 +279,22 @@
 			return pick('sound/voice/human/manlaugh1.ogg', 'sound/voice/human/manlaugh2.ogg')
 	if(ismoth(H))
 		return 'sound/voice/moth/mothlaugh.ogg'
+	else if (islizard(H))
+		return 'sound/voice/lizard/lizard_laugh.ogg'
+	else if (isipc(H))
+		return 'sound/voice/silicon/robot_laugh.ogg'
+	else if (isjellyperson(H))
+		return 'sound/voice/jellyperson/ooze_laugh_single.ogg'
+	else if (isplasmaman(H))
+		return 'sound/voice/phorid/phorid_laugh1.ogg'
+	else if (isvox(H))
+		return 'sound/voice/vox/allen_laugh.ogg'
+	else if (iskepori(H))
+		return 'sound/voice/kepori/kookaburra_laugh_lower2.ogg'
+	else if(isspiderperson(H))
+		return 'sound/voice/rachnid/rachnid_laugh.ogg'
+	else if(iselzuose(H))
+		return 'sound/voice/elzuose/teshari_laugh.ogg'
 
 /datum/emote/living/look
 	key = "look"
@@ -333,10 +349,11 @@
 /datum/emote/living/scream
 	key = "scream"
 	key_third_person = "screams"
-	message = "screams."
+	message = "screams!"
 	message_mime = "acts out a scream!"
 	emote_type = EMOTE_AUDIBLE
-	mob_type_blacklist_typecache = list(/mob/living/carbon/human) //Humans get specialized scream.
+	mob_type_blacklist_typecache = list(/mob/living/carbon/human) //Humans get specialized scream. This helps with reducing sound spam.
+	mob_type_blacklist_typecache = list(/mob/living/carbon/monkey) //Monkeys have their own scream too as screech.
 
 /datum/emote/living/scream/select_message_type(mob/user, intentional)
 	. = ..()
@@ -603,3 +620,23 @@
 	key_third_person = "clacks"
 	message = "clacks their beak."
 	emote_type = EMOTE_VISIBLE
+
+/datum/emote/living/fart
+	key = "fart"
+	key_third_person = "farts"
+	message = "pauses for a moment and farts."
+	message_ipc = "farts so loud the speaker crackled."
+	message_robot = "lets out a beep-toot."
+	message_monkey = "ooks and toots. What a stinker."
+	message_AI = "plays the recording of the captain farting in their sleep."
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/fart/get_sound(mob/living/user)
+	if(!iscarbon(user))
+		return
+	var/mob/living/carbon/human/H = user
+	if(isipc(H))
+		return 'sound/voice/silicon/poo2_robot.ogg'
+	else if(iscarbon(H))
+		return 'sound/voice/human/fart4.ogg'
