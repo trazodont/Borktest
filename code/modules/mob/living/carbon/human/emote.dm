@@ -69,6 +69,20 @@
 		return 'sound/voice/moth/scream_moth.ogg'
 	else if(islizard(H))
 		return pick('sound/voice/lizard/lizard_scream_1.ogg', 'sound/voice/lizard/lizard_scream_2.ogg', 'sound/voice/lizard/lizard_scream_3.ogg', 'sound/voice/lizard/lizard_scream_4.ogg')
+	else if(isipc(H))
+		return pick('sound/voice/silicon/robot_scream.ogg' , 'sound/voice/silicon/Robot_Scream_2.ogg')
+	else if(isvox(H))
+		return pick('sound/voice/vox/vox_scream_1.ogg')
+	else if(iskepori(H))
+		return pick('sound/voice/kepori/kepori_scream1.ogg')
+	else if(isjellyperson(H))
+		return pick('sound/voice/jellyperson/ooze_scream.ogg')
+	else if(isplasmaman(H))
+		return pick('sound/voice/phorid/phorid_scream1.ogg') //definitely not from Half-Life
+	else if(isspiderperson(H))
+		return pick('sound/voice/rachnid/headcrab_1.ogg' , 'sound/voice/rachnid/headcrab_2.ogg' , 'sound/voice/rachnid/headcrab_3.ogg')
+	else if(iselzuose(H))
+		return pick('sound/voice/elzuose/ethereal_scream_1.ogg' , 'sound/voice/elzuose/ethereal_scream_2.ogg' , 'sound/voice/elzuose/ethereal_scream_3.ogg')
 
 /datum/emote/living/carbon/human/hiss //lizard
 	key = "hiss"
@@ -82,6 +96,10 @@
 		return
 	if(islizard(user))
 		return 'sound/voice/lizard/hiss.ogg'
+	if(isspiderperson(user))
+		return 'sound/voice/rachnid/rachnid_hiss1.ogg'
+	if(isvox(user))
+		return pick('sound/voice/vox/scamphiss_1.ogg' , 'sound/voice/vox/scamphiss_2.ogg')
 
 /datum/emote/living/carbon/human/squeal //lizard
 	key = "squeal"
@@ -121,6 +139,19 @@
 		return
 	if(islizard(user))
 		return 'sound/voice/lizard/weh.ogg'
+
+/datum/emote/living/carbon/human/chirp //birds
+	key = "chirp"
+	key_third_person = "chirps"
+	message = "chirps!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/chirp/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	if(isvox(user))
+		return pick('sound/voice/vox/raptor_1.ogg' , 'sound/voice/vox/raptor_2.ogg' , 'sound/voice/vox/raptor_3.ogg' , 'sound/voice/vox/raptor_4.ogg' , 'sound/voice/vox/raptor_5.ogg')
 
 /datum/emote/living/carbon/human/pale
 	key = "pale"
@@ -354,8 +385,28 @@
 	if(iskepori(user))
 		return 'sound/voice/kepori/kepiwhistle.ogg' //https://freesound.org/people/Andreas.Mustola/sounds/338277/
 
-/datum/emote/living/carbon/human/kepiwoop // i have yet to find a woop sound that doesnt suck i will do it later
+/datum/emote/living/carbon/human/kepiwoop // i have yet to find a woop sound that doesnt suck i will do it later / Hi Az here, I found one good enough
 	key = "woop"
 	key_third_person = "woops"
 	message = "woops!"
 	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/kepiwoop/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	if(iskepori(user))
+		return 'sound/voice/kepori/motmot_singlewoops.ogg'
+
+/datum/emote/living/carbon/human/squawk
+	key = "squawk"
+	key_third_person = "squawks"
+	message = "squawks!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/squawk/get_sound(mob/living/user)
+	if(!ishuman(user))
+		return
+	if(iskepori(user))
+		return pick('sound/voice/kepori/squawk1.ogg' , 'sound/voice/kepori/squawk2.ogg' , 'sound/voice/kepori/squawk3.ogg')

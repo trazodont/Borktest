@@ -101,6 +101,7 @@
 	key = "screech"
 	key_third_person = "screeches"
 	message = "screeches."
+	sound = 'sound/voice/monkey/monkey_scream.ogg'
 	mob_type_allowed_typecache = list(/mob/living/carbon/monkey, /mob/living/carbon/alien)
 
 /datum/emote/living/carbon/sign
