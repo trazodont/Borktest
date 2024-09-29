@@ -44,3 +44,10 @@
 	cost = 1000
 	contains = list(/obj/item/vending_refill/games)
 	crate_name = "games supply crate"
+
+/datum/supply_pack/vendor_refill/mining_equipment
+	name = "Frontier Supply Crate"
+	desc = "Restock your favourite frontier vending machine with all of your favourite mining equipment."
+	cost = 4000
+	contains = list(/obj/item/vending_refill/mining_equipment)
+	crate_name = "frontier supply crate"
