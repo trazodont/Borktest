@@ -82,6 +82,16 @@
 		Costumes
 */
 
+/datum/supply_pack/costumes_toys/clown_costume
+	name = "!! CLOWN CRATE !! 99% OFF !!"
+	desc = "BIG DEALS! BIG JOKES!"
+	cost = 50
+	contains = list (/obj/item/clothing/mask/gas/clown_hat,
+					/obj/item/clothing/under/rank/civilian/clown,
+					/obj/item/clothing/shoes/clown_shoes,
+					/obj/item/storage/backpack/clown)
+	crate_name = "comedy crate"
+
 /datum/supply_pack/costumes_toys/costume_original
 	name = "Original Costume Crate"
 	desc = "Reenact Shakespearean plays with this assortment of outfits. Contains eight different costumes!"
