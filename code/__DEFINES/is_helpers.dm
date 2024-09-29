@@ -92,6 +92,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 
 #define isalienadult(A) (istype(A, /mob/living/carbon/alien/humanoid) || istype(A, /mob/living/simple_animal/hostile/alien))
 
+#define isasteroid(A) (istype(A, /mob/living/simple_animal/hostile/asteroid))
+
 #define isalienhunter(A) (istype(A, /mob/living/carbon/alien/humanoid/hunter))
 
 #define isaliensentinel(A) (istype(A, /mob/living/carbon/alien/humanoid/sentinel))
@@ -99,6 +101,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 #define isalienroyal(A) (istype(A, /mob/living/carbon/alien/humanoid/royal))
 
 #define isalienqueen(A) (istype(A, /mob/living/carbon/alien/humanoid/royal/queen))
+
+#define isasteroidelite(A) (istype(A, /mob/living/simple_animal/hostile/asteroid/elite))
 
 #define istruedevil(A) (istype(A, /mob/living/carbon/true_devil))
 

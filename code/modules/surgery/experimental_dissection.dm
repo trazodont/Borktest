@@ -1,4 +1,4 @@
-#define BASE_HUMAN_REWARD 500
+#define BASE_HUMAN_REWARD 750
 #define EXPDIS_FAIL_MSG "<span class='notice'>You dissect [target], but do not find anything particularly interesting.</span>"
 #define PUBLIC_TECHWEB_GAIN 0.6 //how many research points go directly into the main pool
 #define PRIVATE_TECHWEB_GAIN (1 - PUBLIC_TECHWEB_GAIN) //how many research points go directly into the main pool
@@ -50,20 +50,24 @@
 
 	//determine bonus applied
 	if(isalienqueen(target) || isalienroyal(target))
-		cost = (BASE_HUMAN_REWARD*38)
+		cost = (BASE_HUMAN_REWARD*25)
 	else if(isalienadult(target))
-		cost = (BASE_HUMAN_REWARD*30)
+		cost = (BASE_HUMAN_REWARD*23)
 	else if(ismonkey(target))
 		cost = (BASE_HUMAN_REWARD*0.5)
+	else if (isasteroidelite(target))
+		cost = (BASE_HUMAN_REWARD*5)
+	else if(isasteroid(target))
+		cost = (BASE_HUMAN_REWARD*2.5)
 	else if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(H?.dna?.species)
 			if(isabductor(H))
-				cost = (BASE_HUMAN_REWARD*24)
-			else if(iszombie(H) || isshadow(H) || isandroid(H))
 				cost = (BASE_HUMAN_REWARD*20)
+			else if(iszombie(H) || isshadow(H) || isandroid(H))
+				cost = (BASE_HUMAN_REWARD*17)
 			else if(isjellyperson(H) || ispodperson(H) || isalien(H))
-				cost = (BASE_HUMAN_REWARD*14)
+				cost = (BASE_HUMAN_REWARD*11)
 			else if(isskeleton(H))
 				cost = (BASE_HUMAN_REWARD * 0.5)
 	else

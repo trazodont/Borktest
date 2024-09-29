@@ -80,7 +80,7 @@ GLOBAL_LIST_INIT(patrons, world.file2list("[global.config.directory]/patrons.txt
 	screen_loc = "4,1"
 
 /atom/movable/screen/credit/title_card/Initialize(mapload, credited, title_icon_state)
-	icon_state = title_icon_state
+	icon_state = "borktest"
 	. = ..()
 	maptext = null
 
