@@ -45,6 +45,14 @@
 	contains = list(/obj/item/vending_refill/games)
 	crate_name = "games supply crate"
 
+/datum/supply_pack/vendor_refill/hydroponics
+	name = "Hydroponics Supply Crate"
+	desc = "Out of seeds? Out of nutrients? No worries! This crate contains refills for the MegaSeed and Nutrimax"
+	cost = 1000
+	contains = list(/obj/item/vending_refill/hydroseeds,
+					/obj/item/vending_refill/hydronutrients)
+	crate_name = "hydroponics supply crate"
+
 /datum/supply_pack/vendor_refill/mining_equipment
 	name = "Frontier Supply Crate"
 	desc = "Restock your favourite frontier vending machine with all of your favourite mining equipment."
