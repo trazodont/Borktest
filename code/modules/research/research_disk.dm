@@ -102,7 +102,7 @@
 	origin_type = "exotic particle physics"
 
 /obj/item/research_notes/loot/tiny
-	value = 500
+	value = 1000
 
 /obj/item/research_notes/loot/small
 	value = 2000
