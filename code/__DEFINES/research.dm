@@ -81,8 +81,8 @@
 #define BOMB_SUB_TARGET_EXPONENT 2 // The power of the points curve below the target size. Higher = less points for worse bombs, below target.
 
 ///Research point values for slime extracts, see the R&D console's attackby code
-#define SLIME_RESEARCH_TIER_0 500
-#define SLIME_RESEARCH_TIER_1 1500
+#define SLIME_RESEARCH_TIER_0 1000
+#define SLIME_RESEARCH_TIER_1 1750
 #define SLIME_RESEARCH_TIER_2 3000
 #define SLIME_RESEARCH_TIER_3 6000
 #define SLIME_RESEARCH_TIER_4 9000
@@ -90,8 +90,8 @@
 #define SLIME_RESEARCH_TIER_RAINBOW 20000
 
 ///Research point values for plant discoveries
-#define PLANT_RESEARCH_TIER_0 500
-#define PLANT_RESEARCH_TIER_1 1000
+#define PLANT_RESEARCH_TIER_0 1000
+#define PLANT_RESEARCH_TIER_1 1750
 #define PLANT_RESEARCH_TIER_2 2000
 #define PLANT_RESEARCH_TIER_3 4000
 #define PLANT_RESEARCH_TIER_4 8000
