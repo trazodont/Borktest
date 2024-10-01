@@ -14,14 +14,14 @@
 	desc = "An improved version of its predecessor this tool collects large amounts of data."
 	icon_state = "survey-adv"
 	survey_value = 600
-	survey_delay = 2.25 SECONDS
+	survey_delay = 2.5 SECONDS
 
 /obj/item/survey_handheld/elite
 	name = "Experimental Survey Handheld"
 	desc = "An improvement on even the Advanced version; this handheld was designed to be extremely fast in collecting data."
 	icon_state = "survey-elite"
 	survey_value = 750
-	survey_delay = 1.5 SECONDS
+	survey_delay = 2 SECONDS
 
 /obj/item/survey_handheld/attack_self(mob/user)
 	if(active)
