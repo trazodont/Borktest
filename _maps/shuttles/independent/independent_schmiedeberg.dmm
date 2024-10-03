@@ -344,6 +344,7 @@
 /obj/item/reagent_scanner,
 /obj/item/clothing/gloves/color/latex,
 /obj/item/storage/box/syringes,
+/obj/item/construction/plumbing,
 /obj/item/storage/box/beakers,
 /obj/item/storage/box/beakers,
 /obj/item/geiger_counter,
