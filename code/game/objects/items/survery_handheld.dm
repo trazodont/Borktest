@@ -29,6 +29,24 @@
 
 	var/turf/src_turf = get_turf(src)
 
+	//check to see if we're stealing somebody's starting points
+	var/datum/overmap/outpost/home_outpost = SSovermap.outposts[1]
+	if (home_outpost.mapzone ==src.get_map_zone()) //if we're in the starting outpost
+		//and we're not on floor 0....
+		var/vlevel = src.get_virtual_level()
+		if (home_outpost.mapzone.virtual_levels[1] != vlevel)
+			//and this isn't our ships' Z level...
+			var/owned = FALSE
+			for (var/datum/overmap/ship/controlled/ship in home_outpost.contents)
+				var/shipv = ship.shuttle_port.get_virtual_level()
+				for (var/weakref in ship.job_holder_refs)
+					var/datum/weakref/ref = ship.job_holder_refs[weakref][1]
+					if (src.loc == ref.resolve() && shipv == vlevel) // is our owner in the manifest?
+						owned = TRUE
+			if (!owned)
+				src_turf.visible_message("<span class='warning'>Warning: Scan area allocated to docked vessel.</span>")
+				return
+
 	var/my_z = "[virtual_z()]"
 	if(z_active[my_z])
 		flick(icon_state + "-corrupted", src)
