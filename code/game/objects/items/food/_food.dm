@@ -73,7 +73,7 @@
 	return
 
 ///This proc handles grillable components, overwrite if you want different grill results etc.
-/obj/item/reagent_containers/food/proc/make_grillable()
+/obj/item/food/proc/make_grillable()
 	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/badrecipe, rand(20 SECONDS, 30 SECONDS), FALSE)
 	return
 
