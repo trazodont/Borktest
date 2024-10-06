@@ -122,8 +122,8 @@ GENE SCANNER
 		user.visible_message("<span class='warning'>[user] analyzes the floor's vitals!</span>", \
 							"<span class='notice'>You stupidly try to analyze the floor's vitals!</span>")
 		to_chat(user, "<span class='info'>Analyzing results for The floor:\n\tOverall status: <b>Healthy</b></span>\
-					\n<span class='info'>Key: <font color='blue'>Suffocation</font>/<font color='green'>Toxin</font>/<font color='#FF8000'>Burn</font>/<font color='red'>Brute</font></span>\
-					\n<span class='info'>\tDamage specifics: <font color='blue'>0</font>-<font color='green'>0</font>-<font color='#FF8000'>0</font>-<font color='red'>0</font></span>\
+					\n<span class='info'>Key: <font color='#1d63e6'>Suffocation</font>/<font color='green'>Toxin</font>/<font color='#FF8000'>Burn</font>/<font color='red'>Brute</font></span>\
+					\n<span class='info'>\tDamage specifics: <font color='#1d63e6'>0</font>-<font color='green'>0</font>-<font color='#FF8000'>0</font>-<font color='red'>0</font></span>\
 					\n<span class='info'>Body temperature: ???</span>")
 		return
 
@@ -235,7 +235,7 @@ GENE SCANNER
 							<td><font color='red'>[CEILING(brute_loss,1)]</font></td>\
 							<td><font color='orange'>[CEILING(fire_loss,1)]</font></td>\
 							<td><font color='green'>[CEILING(tox_loss,1)]</font></td>\
-							<td><font color='blue'>[CEILING(oxy_loss,1)]</font></td></tr>"
+							<td><font color='#1d63e6'>[CEILING(oxy_loss,1)]</font></td></tr>"
 
 			for(var/o in damaged)
 				var/obj/item/bodypart/org = o //head, left arm, right arm, etc.
@@ -290,9 +290,9 @@ GENE SCANNER
 			var/render = FALSE
 			var/toReport = "<span class='info ml-1'>Organs:</span>\
 				<table class='ml-2'><tr>\
-				<td style='width:6em;'><font color='#0000CC'><b>Organ</b></font></td>\
-				[advanced ? "<td style='width:3em;'><font color='#0000CC'><b>Dmg</b></font></td>" : ""]\
-				<td style='width:12em;'><font color='#0000CC'><b>Status</b></font></td>"
+				<td style='width:6em;'><font color='#0d5cee'><b>Organ</b></font></td>\
+				[advanced ? "<td style='width:3em;'><font color='#0d5cee'><b>Dmg</b></font></td>" : ""]\
+				<td style='width:12em;'><font color='#0d5cee'><b>Status</b></font></td>"
 
 			for(var/obj/item/organ/organ in H.internal_organs)
 				var/status = ""
@@ -301,8 +301,8 @@ GENE SCANNER
 				else if (organ.damage > organ.low_threshold) status = "<font color='#F28F1F'>Mildly Damaged</font>"
 				if (status != "")
 					render = TRUE
-					toReport += "<tr><td><font color='#0000CC'>[organ.name]</font></td>\
-						[advanced ? "<td><font color='#0000CC'>[CEILING(organ.damage,1)]</font></td>" : ""]\
+					toReport += "<tr><td><font color='#0d5cee'>[organ.name]</font></td>\
+						[advanced ? "<td><font color='#0d5cee'>[CEILING(organ.damage,1)]</font></td>" : ""]\
 						<td>[status]</td></tr>"
 
 			if (render)
