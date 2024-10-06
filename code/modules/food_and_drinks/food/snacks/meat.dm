@@ -45,7 +45,7 @@
 	foodtype = MEAT | RAW | GORE
 
 /obj/item/reagent_containers/food/snacks/meat/slab/make_grillable()
-	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/plain/, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/plain, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 
 /obj/item/reagent_containers/food/snacks/meat/slab/human/initialize_slice(obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/human/slice, reagents_per_slice)
