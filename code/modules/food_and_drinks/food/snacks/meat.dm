@@ -18,6 +18,9 @@
 	tastes = list("meat" = 1)
 	foodtype = MEAT | RAW
 
+/obj/item/reagent_containers/food/snacks/meat/slab/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/initialize_slice(obj/item/reagent_containers/food/snacks/meat/rawcutlet/slice, reagents_per_slice)
 	..()
 	var/mutable_appearance/filling = mutable_appearance(icon, "rawcutlet_coloration")
@@ -40,6 +43,10 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/human
 	tastes = list("tender meat" = 1)
 	foodtype = MEAT | RAW | GORE
+
+/obj/item/reagent_containers/food/snacks/meat/slab/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/plain/, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 
 /obj/item/reagent_containers/food/snacks/meat/slab/human/initialize_slice(obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/human/slice, reagents_per_slice)
 	..()
@@ -75,6 +82,9 @@
 	filling_color = "#6B8E23"
 	tastes = list("meat" = 4, "scales" = 1)
 	foodtype = MEAT | RAW | GORE
+
+/obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/lizard/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/plain/human/lizard, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/plant
 	icon_state = "plantmeat"
@@ -147,6 +157,9 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/synth
 	foodtype = RAW | MEAT //hurr durr chemicals we're harmed in the production of this meat thus its non-vegan.
 
+/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/synth, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/meatproduct
 	name = "meat product"
 	icon_state = "meatproduct"
@@ -154,6 +167,9 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/meatproduct
 	tastes = list("meat flavoring" = 2, "modified starches" = 2, "natural & artificial dyes" = 1, "butyric acid" = 1)
 	foodtype = RAW | MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/slab/meatproduct/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/meatproduct, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey
 	name = "monkey meat"
@@ -191,6 +207,9 @@
 	tastes = list("tomato" = 1)
 	foodtype = FRUIT
 
+/obj/item/reagent_containers/food/snacks/meat/slab/killertomato/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/killertomato, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/bear
 	name = "bear meat"
 	desc = "A very manly slab of meat."
@@ -201,6 +220,9 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/bear
 	tastes = list("meat" = 1, "salmon" = 1)
 	foodtype = RAW | MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/slab/bear/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/bear, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 
 /obj/item/reagent_containers/food/snacks/meat/slab/xeno
@@ -215,6 +237,9 @@
 	tastes = list("meat" = 1, "acid" = 1)
 	foodtype = RAW | MEAT
 
+/obj/item/reagent_containers/food/snacks/meat/slab/xeno/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/xeno, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/spider
 	name = "spider meat"
 	desc = "A slab of spider meat. That is so Kafkaesque."
@@ -225,6 +250,9 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/spider
 	tastes = list("cobwebs" = 1)
 	foodtype = RAW | MEAT | TOXIC
+
+/obj/item/reagent_containers/food/snacks/meat/slab/spider/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/spider, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 
 /obj/item/reagent_containers/food/snacks/meat/slab/goliath
@@ -266,6 +294,9 @@
 	tastes = list("bacon" = 1)
 	foodtype = RAW | MEAT
 
+/obj/item/reagent_containers/food/snacks/meat/rawbacon/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/bacon, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/bacon
 	name = "piece of bacon"
 	desc = "A delicious piece of bacon."
@@ -286,6 +317,9 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
 	foodtype = RAW | MEAT
 
+/obj/item/reagent_containers/food/snacks/meat/slab/gondola/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/gondola, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/slab/penguin
 	name = "penguin meat"
 	icon_state = "birdmeat"
@@ -295,6 +329,9 @@
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin
 	filling_color = "#B22222"
 	tastes = list("beef" = 1, "cod fish" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/slab/penguin/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/penguin, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/rawcrab
 	name = "raw crab meat"
@@ -306,6 +343,9 @@
 	filling_color = "#EAD079"
 	tastes = list("raw crab" = 1)
 	foodtype = RAW | MEAT
+
+/obj/item/reagent_containers/food/snacks/meat/rawcrab/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/crab, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/crab
 	name = "crab meat"
@@ -324,6 +364,9 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/chicken
 	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken
 	tastes = list("chicken" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/slab/chicken/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/steak/chicken, rand(30 SECONDS, 90 SECONDS), TRUE, TRUE)
 
 ////////////////////////////////////// MEAT STEAKS ///////////////////////////////////////////////////////////
 
@@ -423,6 +466,9 @@
 	..()
 	S.name = "[meat_type] cutlet"
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/plain, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
+
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain
 	foodtype = MEAT
@@ -431,6 +477,9 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human
 	tastes = list("tender meat" = 1)
 	foodtype = MEAT | RAW | GORE
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/human/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/plain/human, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/plain/human/initialize_cooked_food(obj/item/reagent_containers/food/snacks/S, cooking_efficiency)
 	..()
@@ -445,35 +494,57 @@
 	tastes = list("tomato" = 1)
 	foodtype = FRUIT
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/killertomato/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/killertomato, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/bear
 	name = "raw bear cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/bear
 	tastes = list("meat" = 1, "salmon" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/bear/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/bear, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
 	name = "raw xeno cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/xeno
 	tastes = list("meat" = 1, "acid" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/xeno, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
+
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/spider
 	name = "raw spider cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/spider
 	tastes = list("cobwebs" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/spider/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/spider, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
 	name = "raw gondola cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola
 	tastes = list("meat" = 1, "tranquility" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin
 	name = "raw penguin cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/penguin
 	tastes = list("beef" = 1, "cod fish" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/penguin/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/penguin, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken
 	name = "raw chicken cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/chicken
 	tastes = list("chicken" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/chicken/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/meat/cutlet/chicken, rand(35 SECONDS, 50 SECONDS), TRUE, TRUE)
 
 //Cooked cutlets
 
