@@ -58,6 +58,7 @@
 	research_icon_state = "borg_r_leg"
 	build_path = /obj/item/bodypart/leg/right/robot
 	materials = list(/datum/material/iron=10000)
+	construction_time = 200
 
 
 //Prosthetics
