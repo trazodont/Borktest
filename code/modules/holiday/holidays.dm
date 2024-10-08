@@ -425,7 +425,7 @@
 	begin_month = NOVEMBER
 
 /datum/holiday/hello/greet()
-	return "[pick(list("Aloha", "Bonjour", "Hello", "Hi", "Greetings", "Salutations", "Bienvenidos", "Hola", "Howdy", "Ni hao", "Guten Tag", "Konnichiwa", "G'day cunt"))]! " + ..()
+	return "[pick(list("Aloha", "Bonjour", "Hello", "Hi", "Greetings", "Salutations", "Bienvenidos", "Hola", "Howdy", "Ni hao", "Guten Tag", "Konnichiwa"))]! " + ..()
 
 /datum/holiday/human_rights
 	name = "Human-Rights Day"
