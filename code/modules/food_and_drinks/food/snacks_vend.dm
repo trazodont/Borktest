@@ -32,10 +32,11 @@
 
 /obj/item/reagent_containers/food/snacks/candy/bronx/On_Consume(mob/living/eater)
 	. = ..()
-	if(ishuman(eater))
+	// Let's stop losing our crewmates over dumb candy
+	/* if(ishuman(eater))
 		var/mob/living/carbon/human/carl = eater
 		var/datum/disease/P = new /datum/disease/parasite()
-		carl.ForceContractDisease(P, FALSE, TRUE)
+		carl.ForceContractDisease(P, FALSE, TRUE) */
 
 /obj/item/reagent_containers/food/snacks/candy/bronx/examine(mob/user)
 	. = ..()
