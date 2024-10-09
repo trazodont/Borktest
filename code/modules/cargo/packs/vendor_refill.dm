@@ -46,11 +46,18 @@
 	crate_name = "games supply crate"
 
 /datum/supply_pack/vendor_refill/hydroponics
-	name = "Hydroponics Supply Crate"
-	desc = "Out of seeds? Out of nutrients? No worries! This crate contains refills for the MegaSeed and Nutrimax"
-	cost = 1000
+	name = "Hydroponics Nutrient Crate"
+	desc = "Need some variety in your crop rotation? Contains a vending refill, to build or restock a MegaSeed servitor"
+	cost = 3000
 	contains = list(/obj/item/vending_refill/hydroseeds,
 					/obj/item/vending_refill/hydronutrients)
+	crate_name = "hydroponics supply crate"
+
+/datum/supply_pack/vendor_refill/hydroponics_nutrients
+	name = "Hydroponics Nutrient Restock"
+	desc = "Out of nutrients? Contains a vending refill for building or restocking a Nutrimax vending machine."
+	cost = 1500
+	contains = list(/obj/item/vending_refill/hydronutrients)
 	crate_name = "hydroponics supply crate"
 
 /datum/supply_pack/vendor_refill/mining_equipment
