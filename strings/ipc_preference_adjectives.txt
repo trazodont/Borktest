@@ -1,10 +1,14 @@
+Bailful
 Bedraggled
 Brawny
+British
+Bubbly
 Bulky
 Burly
 Calm
 Chaotic
 Charming
+Cringy
 Delicate
 Dignified
 Disgusting
@@ -38,6 +42,7 @@ Mangled
 Masculine
 Messy
 Nimble
+Patriotic
 Petite
 Pompous
 Pugnacious
@@ -53,9 +58,11 @@ Sleek
 Slender
 Slovenly
 Sluggish
+Smelly
 Spacy
 Stiff
 Stony
+Stupid
 Stylish
 Unattractive
 Unremarkable
