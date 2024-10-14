@@ -610,6 +610,14 @@
 	build_path = /obj/item/reagent_containers/glass/chem_jug/open
 	category = list("initial", "Medical", "Medical Designs")
 
+/datum/design/stethoscope
+	name = "Stethoscope"
+	id = "stethoscope"
+	build_type = AUTOLATHE
+	materials = list(/datum/material/iron = 5000, /datum/material/glass = 1000, /datum/material/plastic = 250)
+	build_path = /obj/item/clothing/neck/stethoscope
+	category = list("initial", "Medical", "Medical Designs")
+
 /datum/design/recorder
 	name = "Universal Recorder"
 	id = "recorder"
