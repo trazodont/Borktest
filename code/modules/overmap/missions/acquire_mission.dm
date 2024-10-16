@@ -360,12 +360,9 @@ Acquire: Anomaly
 /obj/item/storage/box/anomaly
 	name = "anomaly case"
 	desc = "A metallic box made to store anomaly cores. They aren't always the safest to lug around."
-	icon = 'icons/obj/nuke_tools.dmi'
-	icon_state = "core_container_sealed" //it'd be neat if I could figure out how to make this seal but that's a problem for me in 6 months
-	item_state = "tile"
-	lefthand_file = 'icons/mob/inhands/misc/tiles_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/misc/tiles_righthand.dmi'
-	foldable = null
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "anomalysubbox" //it'd be neat if I could figure out how to make this seal but that's a problem for me in 6 months
+	illustration = null
 
 /obj/item/storage/box/anomaly/ComponentInitialize()
 	. = ..()
