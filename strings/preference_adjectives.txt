@@ -30,7 +30,6 @@ Effeminate
 Elegant
 Emaciated
 Energetic
-Energetic
 Exasperated
 Exotic
 Faint
@@ -48,7 +47,6 @@ Gentle
 Gloomy
 Gormless
 Hawkish
-Hawkish
 Healthy
 Hefty
 Hobbling
@@ -63,7 +61,6 @@ Lithe
 Lopsided
 Lovely
 Malnourished
-Mangled
 Mangled
 Masculine
 Messy
