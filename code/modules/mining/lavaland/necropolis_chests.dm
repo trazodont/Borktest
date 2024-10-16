@@ -47,7 +47,10 @@
 		if(15)
 			new /obj/item/book_of_babel(src)
 		if(16)
-			new /obj/item/ship_in_a_bottle(src)
+			if(prob(75))
+				new /obj/item/guardiancreator/miner(src)
+			else
+				new /obj/item/guardiancreator/miner/choose (src)
 		if(17)
 			if(prob(50))
 				new /obj/item/disk/design_disk/modkit_disc/mob_and_turf_aoe(src)
@@ -115,7 +118,10 @@
 			if(15)
 				new /obj/item/book_of_babel(src)
 			if(16)
-				new /obj/item/ship_in_a_bottle(src)
+				if(prob(75))
+					new /obj/item/guardiancreator/miner(src)
+				else
+					new /obj/item/guardiancreator/miner/choose (src)
 			if(17)
 				if(prob(50))
 					new /obj/item/disk/design_disk/modkit_disc/mob_and_turf_aoe(src)
