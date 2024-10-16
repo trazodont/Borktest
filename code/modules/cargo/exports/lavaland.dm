@@ -20,7 +20,6 @@
 						/obj/item/ship_in_a_bottle,
 						/obj/item/clothing/shoes/clown_shoes/banana_shoes,
 						/obj/item/veilrender/vealrender,
-						/obj/item/nullrod/scythe/talking/necro,
 						/obj/item/clothing/suit/armor/ascetic)
 
 /datum/export/lavaland/major //valuable chest/ruin loot and staff of storms
