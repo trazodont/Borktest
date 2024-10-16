@@ -182,6 +182,8 @@
 #define COMSIG_ATOM_CROWBAR_ACT "atom_crowbar_act"
 ///from base of atom/analyser_act(): (mob/living/user, obj/item/I)
 #define COMSIG_ATOM_ANALYSER_ACT "atom_analyser_act"
+///from base of atom/deconstruct_act(): (mob/living/user, obj/item/I)
+#define COMSIG_ATOM_DECONSTRUCT_ACT "atom_deconstruct_act"
 
 ///for any tool behaviors: (mob/living/user, obj/item/I, list/recipes)
 #define COMSIG_ATOM_TOOL_ACT(tooltype) "tool_act_[tooltype]"
@@ -692,6 +694,7 @@
 	#define COMPONENT_TWOHANDED_BLOCK_WIELD 1
 #define COMSIG_TWOHANDED_UNWIELD "twohanded_unwield" //from base of datum/component/two_handed/proc/unwield(mob/living/carbon/user): (/mob/user)
 
+
 // /datum/action signals
 #define COMSIG_ACTION_TRIGGER "action_trigger" //from base of datum/action/proc/Trigger(): (datum/action)
 	#define COMPONENT_ACTION_BLOCK_TRIGGER 1
@@ -766,3 +769,9 @@
 #define COMSIG_PREQDELETED "parent_preqdeleted"
 /// just before a datum's Destroy() is called: (force), at this point none of the other components chose to interrupt qdel and Destroy will be called
 #define COMSIG_QDELETING "parent_qdeleting"
+
+// Point of interest signals
+/// Sent from base of /datum/controller/subsystem/points_of_interest/proc/on_poi_element_added : (atom/new_poi)
+#define COMSIG_ADDED_POINT_OF_INTEREST "added_point_of_interest"
+/// Sent from base of /datum/controller/subsystem/points_of_interest/proc/on_poi_element_removed : (atom/old_poi)
+#define COMSIG_REMOVED_POINT_OF_INTEREST "removed_point_of_interest"
