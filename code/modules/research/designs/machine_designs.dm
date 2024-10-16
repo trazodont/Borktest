@@ -347,6 +347,13 @@
 	build_path = /obj/item/circuitboard/machine/oven
 	category = list ("Misc. Machinery")
 
+/datum/design/board/griddle
+	name = "Machine Design (Griddle Board)"
+	desc = "The circuit board for a griddle."
+	id = "griddle"
+	build_path = /obj/item/circuitboard/machine/griddle
+	category = list ("Misc. Machinery")
+
 /datum/design/board/gibber
 	name = "Machine Design (Gibber Board)"
 	desc = "The circuit board for a gibber."
