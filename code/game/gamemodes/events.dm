@@ -47,10 +47,11 @@
 	for(var/area/A in GLOB.sortedAreas)
 		if(!A.requires_power || A.always_unpowered)
 			continue
-		A.power_light = TRUE
-		A.power_equip = TRUE
-		A.power_environ = TRUE
-		A.power_change()
+		if(!istype(A, /area/shuttle))
+			A.power_light = TRUE
+			A.power_equip = TRUE
+			A.power_environ = TRUE
+			A.power_change()
 
 /proc/power_restore_quick()
 	priority_announce("All SMESs have been recharged. We apologize for the inconvenience.", "Power Systems Nominal", 'sound/ai/poweron.ogg')

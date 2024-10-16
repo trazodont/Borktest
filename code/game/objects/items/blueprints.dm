@@ -150,6 +150,7 @@
 	if(A.outdoors)
 		return AREA_SPACE
 	var/list/SPECIALS = list(
+		/area/shuttle,
 		/area/centcom,
 		/area/asteroid,
 		/area/tdome,

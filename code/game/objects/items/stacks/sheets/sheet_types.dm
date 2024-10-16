@@ -7,6 +7,7 @@
  * Plastic
  * Cardboard
  * Paper Frames
+ * Runed Metal (cult)
  * Bronze (bake brass)
  */
 
