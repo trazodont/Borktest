@@ -2,7 +2,7 @@
 	name = "anomaly neutralizer"
 	desc = "A one-use device capable of instantly neutralizing anomalies."
 	icon = 'icons/obj/device.dmi'
-	icon_state = "memorizer2"
+	icon_state = "neutralizer"
 	item_state = "electronic"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
