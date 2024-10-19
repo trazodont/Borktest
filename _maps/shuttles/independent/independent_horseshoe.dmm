@@ -1,10 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aT" = (
+/obj/machinery/power/smes/shuttle,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "truckthrustsouth"
 	},
-/obj/machinery/power/smes/shuttle,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -35,6 +35,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "eg" = (
@@ -48,7 +51,6 @@
 /obj/structure/cable{
 	icon_state = "2-9"
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/visible/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "4-9"
@@ -56,16 +58,17 @@
 /obj/structure/cable{
 	icon_state = "8-9"
 	},
+/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "eP" = (
 /obj/structure/bed{
 	dir = 4;
-	pixel_y = 15
+	pixel_y = 0
 	},
-/obj/item/bedsheet/dorms{
-	dir = 4;
-	pixel_y = 15
+/obj/machinery/airalarm/directional/north,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
@@ -75,27 +78,23 @@
 	height = 30;
 	dwidth = 15
 	},
-/obj/docking_port/mobile{
-	port_direction = 2
-	},
 /turf/template_noop,
 /area/template_noop)
 "fj" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_x = -5;
-	pixel_y = 29
-	},
 /obj/machinery/button/door{
 	id = "truckwindows";
 	name = "Window Lockdown";
-	pixel_x = 11;
-	pixel_y = 20
+	pixel_x = -20;
+	pixel_y = 8;
+	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/machinery/light/directional/west,
+/obj/item/radio/intercom/wideband/directional/west{
+	pixel_y = -7
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "gY" = (
@@ -107,7 +106,7 @@
 /area/ship/engineering)
 "jJ" = (
 /turf/closed/wall/r_wall/yesdiag,
-/area/template_noop)
+/area/ship/bridge)
 "kB" = (
 /turf/closed/wall/r_wall,
 /area/ship/crew)
@@ -121,13 +120,20 @@
 /turf/open/floor/plating,
 /area/ship/bridge)
 "kD" = (
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	dir = 1;
-	id = "loadfield"
-	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "loadback"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	dir = 1;
+	id = "loadfield";
+	anchored = 1
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -163,8 +169,8 @@
 /turf/closed/wall/r_wall/yesdiag,
 /area/ship/engineering)
 "oR" = (
-/obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering)
@@ -183,23 +189,29 @@
 	pixel_x = -12;
 	pixel_y = -19
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "qj" = (
-/turf/closed/wall,
+/obj/machinery/cryopod,
+/obj/machinery/airalarm/directional/north,
+/turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "qp" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = 14
-	},
 /obj/structure/toilet{
-	pixel_y = 18
+	pixel_y = 18;
+	dir = 2
 	},
 /obj/machinery/door/window{
-	dir = 8
+	dir = 4
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+/obj/structure/sink{
+	pixel_y = 1;
+	dir = 1
+	},
+/obj/machinery/door/window{
 	dir = 8
 	},
 /turf/open/floor/plasteel/grimy,
@@ -219,7 +231,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
@@ -255,21 +267,21 @@
 /obj/item/mining_scanner,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
+"uK" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/cargo)
 "vk" = (
 /obj/structure/cable{
 	icon_state = "2-9"
-	},
-/obj/machinery/button/door{
-	dir = 8;
-	id = "truckthrustnorth";
-	name = "Thruster Lockdown";
-	pixel_x = 21
 	},
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/airlock/external/glass,
-/turf/open/space/basic,
+/turf/open/floor/plasteel/patterned,
 /area/ship/engineering)
 "vR" = (
 /obj/machinery/power/shuttle/engine/electric,
@@ -290,7 +302,7 @@
 	id = "loadfield"
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 4
+	dir = 8
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -322,11 +334,11 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Bm" = (
+/obj/machinery/power/smes/shuttle,
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "truckthrustnorth"
 	},
-/obj/machinery/power/smes/shuttle,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -337,6 +349,9 @@
 /area/ship/engineering)
 "Cc" = (
 /obj/machinery/light/dim/directional/south,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Cq" = (
@@ -395,11 +410,9 @@
 /turf/closed/wall/r_wall/yesdiag,
 /area/ship/cargo)
 "GV" = (
-/obj/machinery/door/airlock/external/glass{
-	dir = 1
-	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "HA" = (
@@ -427,6 +440,15 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
+"Jd" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8
+	},
+/turf/open/floor/plasteel/mono,
+/area/ship/cargo)
 "JC" = (
 /obj/structure/cable{
 	icon_state = "1-10"
@@ -441,6 +463,9 @@
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "loadback"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -484,34 +509,40 @@
 	icon_state = "6-8"
 	},
 /obj/machinery/light/floor,
-/obj/structure/cable{
-	icon_state = "0-6"
+/obj/machinery/advanced_airlock_controller{
+	pixel_y = -17
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering)
 "Nb" = (
 /obj/effect/turf_decal/industrial/warning{
-	dir = 4
+	dir = 8
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Nr" = (
-/obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "loadfield"
-	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "loadback"
 	},
-/turf/open/space/basic,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/shieldwallgen/atmos{
+	id = "loadfield";
+	anchored = 1
+	},
+/turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "NO" = (
-/obj/machinery/door/airlock/external/glass{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/docking_port/mobile{
+	dir = 8;
+	preferred_direction = 4
+	},
+/obj/machinery/door/airlock/external,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "Ol" = (
@@ -526,8 +557,17 @@
 "OI" = (
 /turf/closed/wall/r_wall,
 /area/ship/bridge)
+"Pf" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/plasteel/mono,
+/area/ship/cargo)
 "Rr" = (
-/obj/machinery/power/smes,
+/obj/machinery/power/smes{
+	charge = 1.5e+006
+	},
 /obj/structure/cable{
 	icon_state = "0-6"
 	},
@@ -551,7 +591,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/plasteel/grimy,
+/turf/open/floor/plasteel/patterned,
 /area/ship/crew)
 "WZ" = (
 /obj/machinery/power/terminal{
@@ -599,12 +639,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-"ZV" = (
-/obj/machinery/advanced_airlock_controller{
-	pixel_y = 12
-	},
-/turf/closed/wall/r_wall,
-/area/ship/engineering)
 
 (1,1,1) = {"
 Ka
@@ -640,7 +674,7 @@ TA
 vV
 Nb
 Nb
-Nb
+Jd
 TA
 Ka
 Ka
@@ -666,7 +700,7 @@ TA
 cs
 cs
 cs
-cs
+uK
 TA
 Ka
 Ka
@@ -679,7 +713,7 @@ TA
 cs
 cs
 cs
-cs
+Pf
 TA
 Ka
 Ka
@@ -753,7 +787,7 @@ xE
 Ka
 GV
 Ms
-ZV
+xE
 eP
 DX
 HA
