@@ -71,9 +71,12 @@
 /area/ship/crew)
 "fi" = (
 /obj/docking_port/stationary{
-	dwidth = 15;
-	height = 15;
-	width = 30
+	width = 15;
+	height = 30;
+	dwidth = 15
+	},
+/obj/docking_port/mobile{
+	port_direction = 2
 	},
 /turf/template_noop,
 /area/template_noop)
