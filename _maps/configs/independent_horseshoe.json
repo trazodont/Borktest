@@ -12,9 +12,9 @@
 		"SPACE",
 		"NATURAL"
 	],
-	"map_short_name": "Hauler-class",
+	"map_short_name": "Horseshoe-class",
 	"starting_funds": 1000,
-	"map_path": "_maps/shuttles/independent/independent_hauler.dmm",
+	"map_path": "_maps/shuttles/independent/independent_horseshoe.dmm",
 	"job_slots": {
 		"Pilot": {
 			"outfit": "/datum/outfit/job/independent/captain/trucker",
