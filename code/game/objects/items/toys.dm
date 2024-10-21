@@ -245,7 +245,7 @@
 /obj/item/toy/ammo/gun
 	name = "capgun ammo"
 	desc = "Make sure to recyle the box in an autolathe when it gets empty."
-	icon = 'icons/obj/ammo.dmi'
+	icon = 'icons/obj/ammunition/ammo.dmi'
 	icon_state = "357OLD-7"
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/iron=10, /datum/material/glass=10)
@@ -1285,7 +1285,6 @@
 /obj/item/toy/figure/curator
 	name = "Curator action figure"
 	icon_state = "curator"
-	toysay = "One day while..."
 
 /obj/item/toy/figure/md
 	name = "Medical Doctor action figure"

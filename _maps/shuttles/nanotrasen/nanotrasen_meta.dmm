@@ -1679,6 +1679,14 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ship/cargo)
+"jo" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew)
 "jw" = (
 /obj/effect/turf_decal/corner/transparent/bar/diagonal,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2198,6 +2206,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"uT" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew/canteen/kitchen)
 "ve" = (
 /obj/effect/turf_decal/box/corners,
 /obj/machinery/light/broken/directional/south,
@@ -2384,6 +2400,14 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
+"yF" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 5
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/engineering)
 "yS" = (
 /obj/structure/table,
 /obj/item/storage/box/lights/mixed{
@@ -2910,10 +2934,9 @@
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/turretid{
+/obj/machinery/turretid/ship{
 	pixel_y = -24;
-	req_access = null;
-	locked = 0
+	id = "meta_grid"
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -3059,11 +3082,13 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Lo" = (
-/obj/machinery/porta_turret/ship/weak{
-	dir = 1
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium,
-/area/ship/bridge)
+/area/ship/engineering)
 "Lq" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3458,6 +3483,22 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"TR" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 10
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew/canteen)
+"TV" = (
+/obj/machinery/porta_turret/ship/nt/light{
+	id = "meta_grid";
+	pixel_y = 0;
+	dir = 9
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/crew)
 "Uk" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3861,7 +3902,7 @@ aa
 "}
 (6,1,1) = {"
 aa
-Lo
+yF
 ac
 ri
 Pr
@@ -4186,7 +4227,7 @@ aa
 "}
 (19,1,1) = {"
 aa
-Lo
+TV
 ai
 ai
 MU
@@ -4206,7 +4247,7 @@ sA
 Uk
 an
 bD
-Lo
+TR
 aa
 "}
 (20,1,1) = {"
@@ -4412,12 +4453,12 @@ aa
 (28,1,1) = {"
 aa
 aa
-Lo
+jo
 ai
 ai
 ai
 ai
-Lo
+jo
 aa
 aa
 aa
@@ -4425,12 +4466,12 @@ aa
 aa
 aa
 aa
-Lo
+uT
 cO
 cO
 cO
 cO
-Lo
+uT
 aa
 aa
 "}

@@ -259,6 +259,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_DWARF "dwarf"
 #define TRAIT_FASTMED "fast_med_use"
 #define TRAIT_SILENT_FOOTSTEPS "silent_footsteps" //makes your footsteps completely silent
+#define TRAIT_PAIN_RESIST "pain_resistance" //you resist pain
 #define TRAIT_NICE_SHOT "nice_shot" //hnnnnnnnggggg..... you're pretty good....
 /// The holder of this trait has antennae or whatever that hurt a ton when noogied
 #define TRAIT_ANTENNAE "antennae"
@@ -301,6 +302,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NO_STORAGE_INSERT "no_storage_insert" //cannot be inserted in a storage.
 #define TRAIT_T_RAY_VISIBLE "t-ray-visible" // Visible on t-ray scanners if the atom/var/level == 1
 #define TRAIT_NO_TELEPORT "no-teleport" //you just can't
+#define TRAIT_WIELDED "wielded" //The item is currently being wielded
 
 //quirk traits
 #define TRAIT_ALCOHOL_TOLERANCE "alcohol_tolerance"
@@ -328,6 +330,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_BALD "bald"
 #define TRAIT_BADTOUCH "bad_touch"
 #define TRAIT_ANXIOUS "anxious"
+#define TRAIT_ANALGESIA "congenital_analgesia"
 #define TRAIT_ANOSMIA "anosmia"
 
 /// Trait granted by lipstick
@@ -403,14 +406,12 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define STICKY_MOUSTACHE_TRAIT "sticky-moustache"
 #define CHAINSAW_FRENZY_TRAIT "chainsaw-frenzy"
 #define CHRONO_GUN_TRAIT "chrono-gun"
-#define REVERSE_BEAR_TRAP_TRAIT "reverse-bear-trap"
 #define CURSED_MASK_TRAIT "cursed-mask"
 #define HAND_REPLACEMENT_TRAIT "magic-hand"
 #define HOT_POTATO_TRAIT "hot-potato"
 #define ABDUCTOR_VEST_TRAIT "abductor-vest"
 #define CAPTURE_THE_FLAG_TRAIT "capture-the-flag"
 #define EYE_OF_GOD_TRAIT "eye-of-god"
-#define SHAMEBRERO_TRAIT "shamebrero"
 #define CHRONOSUIT_TRAIT "chronosuit"
 #define LOCKED_HELMET_TRAIT "locked-helmet"
 #define NINJA_SUIT_TRAIT "ninja-suit"
