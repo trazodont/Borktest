@@ -180,14 +180,6 @@ Acquire: Anomaly
 	weight = 2
 	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_whelp
 
-/datum/mission/acquire/creature/ice_demon
-	name = "Capture an ice demon"
-	desc = "I require a live ice demon for research purposes. Trap one within the given \
-			Lifeform Containment Unit and return it to me and you will be paid handsomely."
-	value = 1500
-	weight = 2
-	objective_type = /mob/living/simple_animal/hostile/asteroid/ice_demon
-
 /datum/mission/acquire/creature/migo
 	name = "Capture a live mi-go"
 	desc = "I require a live mi-go for research purposes. Trap one within the given \
@@ -360,12 +352,9 @@ Acquire: Anomaly
 /obj/item/storage/box/anomaly
 	name = "anomaly case"
 	desc = "A metallic box made to store anomaly cores. They aren't always the safest to lug around."
-	icon = 'icons/obj/nuke_tools.dmi'
-	icon_state = "core_container_sealed" //it'd be neat if I could figure out how to make this seal but that's a problem for me in 6 months
-	item_state = "tile"
-	lefthand_file = 'icons/mob/inhands/misc/tiles_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/misc/tiles_righthand.dmi'
-	foldable = null
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "anomalysubbox" //it'd be neat if I could figure out how to make this seal but that's a problem for me in 6 months
+	illustration = null
 
 /obj/item/storage/box/anomaly/ComponentInitialize()
 	. = ..()
