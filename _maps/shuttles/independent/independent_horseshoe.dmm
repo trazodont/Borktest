@@ -12,14 +12,14 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "cr" = (
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/machinery/power/shuttle/engine/electric,
 /turf/open/floor/engine/hull,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "cs" = (
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -103,7 +103,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/patterned,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "jJ" = (
 /turf/closed/wall/r_wall/yesdiag,
 /area/ship/bridge)
@@ -145,6 +145,9 @@
 /obj/item/stack/sheet/mineral/plasma/ten,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
+"lS" = (
+/turf/closed/wall/r_wall,
+/area/ship/engineering/engines/port)
 "mf" = (
 /obj/machinery/holopad,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -167,13 +170,13 @@
 "mp" = (
 /obj/structure/sign/warning/docking,
 /turf/closed/wall/r_wall/yesdiag,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "oR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2,
 /obj/structure/closet/emcloset/wall/directional/east,
 /turf/open/floor/plasteel/patterned,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "pP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -256,7 +259,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/patterned,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "sf" = (
 /obj/structure/closet/crate{
 	desc = "A rectangular steel crate. This one has basic mining gear in it.";
@@ -282,14 +285,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/door/airlock/external/glass,
 /turf/open/floor/plasteel/patterned,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "vR" = (
 /obj/machinery/power/shuttle/engine/electric,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/open/floor/engine/hull,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "vV" = (
 /obj/machinery/button/door{
 	pixel_y = 19;
@@ -306,6 +309,9 @@
 	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
+"xa" = (
+/turf/closed/wall/r_wall/yesdiag,
+/area/ship/engineering/engines/port)
 "xA" = (
 /obj/machinery/power/port_gen/pacman{
 	anchored = 1
@@ -317,7 +323,7 @@
 /area/ship/crew)
 "xE" = (
 /turf/closed/wall/r_wall,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "yc" = (
 /obj/machinery/power/terminal{
 	dir = 8
@@ -332,7 +338,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "Bm" = (
 /obj/machinery/power/smes/shuttle,
 /obj/machinery/door/poddoor{
@@ -346,7 +352,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "Cc" = (
 /obj/machinery/light/dim/directional/south,
 /obj/structure/cable{
@@ -418,7 +424,7 @@
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "HA" = (
 /obj/structure/cable{
 	icon_state = "5-9"
@@ -517,7 +523,7 @@
 	pixel_y = -17
 	},
 /turf/open/floor/plasteel/patterned,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "Nb" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -548,7 +554,7 @@
 	},
 /obj/machinery/door/airlock/external,
 /turf/open/floor/plasteel/dark,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "Ol" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile,
@@ -580,7 +586,7 @@
 "RZ" = (
 /obj/structure/sign/warning/docking,
 /turf/closed/wall/r_wall,
-/area/ship/engineering)
+/area/ship/engineering/engines/port)
 "TA" = (
 /turf/closed/wall/r_wall,
 /area/ship/cargo)
@@ -611,7 +617,7 @@
 	pixel_y = -21
 	},
 /turf/open/floor/plating,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "Xx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -630,7 +636,7 @@
 /area/ship/cargo)
 "Yh" = (
 /turf/closed/wall/r_wall/yesdiag,
-/area/ship/engineering)
+/area/ship/engineering/engines/starboard)
 "YC" = (
 /obj/machinery/computer/cargo/retro{
 	dir = 8
@@ -750,7 +756,7 @@ Ka
 "}
 (9,1,1) = {"
 Ka
-Yh
+xa
 vR
 TA
 EJ
@@ -763,7 +769,7 @@ Yh
 "}
 (10,1,1) = {"
 Ka
-xE
+lS
 Bm
 TA
 qN
@@ -778,7 +784,7 @@ xE
 Ka
 RZ
 yc
-xE
+lS
 xA
 Rr
 eg
@@ -791,7 +797,7 @@ xE
 Ka
 GV
 Ms
-xE
+lS
 eP
 DX
 HA
@@ -816,8 +822,8 @@ xE
 (14,1,1) = {"
 Ka
 mp
-xE
-xE
+lS
+lS
 qp
 kB
 kB
