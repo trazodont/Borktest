@@ -1,0 +1,4 @@
+author: trazodont
+changes:
+  - {rscadd: server icon :D}
+delete-after: true
