@@ -243,13 +243,7 @@
 /area/ship/cargo)
 "rZ" = (
 /obj/structure/closet/firecloset/wall/directional/east,
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_x = -12;
-	pixel_y = -19
-	},
 /obj/machinery/power/apc/auto_name/directional/south{
-	pixel_x = 4;
 	pixel_y = -25
 	},
 /obj/structure/cable{
@@ -615,6 +609,11 @@
 	id = "truckthrustsouth";
 	name = "Thruster Lockdown";
 	pixel_y = -21
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = -12;
+	pixel_y = -19
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
