@@ -629,10 +629,6 @@
 /obj/structure/closet/secure_closet/miner/unlocked,
 /turf/open/floor/sepia,
 /area/ship/cargo)
-"jH" = (
-/obj/structure/chair/comfy/blue/directional/east,
-/turf/open/floor/suns/dark/plain,
-/area/ship/bridge)
 "jI" = (
 /turf/closed/wall/mineral/titanium/interior,
 /area/ship/cargo)
@@ -876,11 +872,6 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/ccommons)
-"mR" = (
-/obj/structure/lattice,
-/obj/item/toy/plush/awakenedplushie,
-/turf/open/floor/circuit/off,
-/area/space)
 "mS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1944,11 +1935,6 @@
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/medical)
-"Dz" = (
-/obj/structure/lattice,
-/obj/machinery/autolathe,
-/turf/open/space,
-/area/space)
 "DD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2125,6 +2111,11 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
+"GA" = (
+/obj/structure/lattice,
+/obj/machinery/autolathe,
+/turf/open/space,
+/area/space)
 "GF" = (
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/item/clothing/glasses/hud/diagnostic/sunglasses,
@@ -2415,6 +2406,10 @@
 	},
 /turf/open/floor/suns/hatch,
 /area/ship/medical/psych)
+"Kw" = (
+/obj/structure/lattice,
+/turf/closed/wall/mineral/titanium/interior,
+/area/space)
 "KQ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3251,7 +3246,9 @@
 /obj/machinery/airalarm/directional/south,
 /obj/item/megaphone/clown,
 /obj/item/stamp/clown,
-/obj/item/gun/energy/e_gun/hos,
+/obj/item/gun/energy/e_gun/hos{
+	name = "CL-0WN Style Energy Gun"
+	},
 /obj/item/clothing/mask/gas/clown_hat,
 /obj/item/clothing/under/rank/civilian/clown,
 /obj/item/clothing/under/plasmaman/clown,
@@ -3273,10 +3270,6 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/security/armory)
-"Xg" = (
-/obj/structure/lattice,
-/turf/closed/wall/mineral/titanium/interior,
-/area/space)
 "Xh" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3286,6 +3279,10 @@
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/medical)
+"Xj" = (
+/obj/structure/chair/comfy/blue/directional/east,
+/turf/open/floor/suns/dark/plain,
+/area/ship/bridge)
 "XJ" = (
 /obj/machinery/door/window/eastleft,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -3329,6 +3326,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/cryo)
+"Yj" = (
+/obj/structure/lattice,
+/obj/item/toy/plush/awakenedplushie,
+/turf/open/floor/circuit/off,
+/area/space)
 "Ys" = (
 /obj/machinery/power/smes/shuttle/precharged{
 	dir = 4
@@ -3529,7 +3531,7 @@ SE
 Qe
 Tu
 pq
-Dz
+GA
 pq
 pq
 bw
@@ -4172,7 +4174,7 @@ AJ
 sE
 Wf
 Fs
-jH
+Xj
 VW
 Mg
 Lp
@@ -4233,7 +4235,7 @@ oG
 AJ
 bP
 bN
-mR
+Yj
 Ma
 cC
 rE
@@ -4264,8 +4266,8 @@ Gu
 AO
 uP
 Mw
-Xg
-Xg
+Kw
+Kw
 AO
 uP
 ol
