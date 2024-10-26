@@ -3245,8 +3245,6 @@
 /obj/item/clothing/under/plasmaman/clown,
 /obj/item/clothing/gloves/color/plasmaman/clown,
 /obj/item/clothing/head/helmet/space/plasmaman/clown,
-/obj/item/grenade/spawnergrenade/clown,
-/obj/item/grenade/spawnergrenade/clown,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/clothing/accessory/medal/silver/security,
 /obj/item/clothing/gloves/krav_maga/sec,
@@ -3256,10 +3254,10 @@
 	},
 /obj/item/storage/belt/security,
 /obj/item/reagent_containers/spray/pepper,
-/obj/item/clothing/glasses/hud/security/prescription,
 /obj/structure/closet/secure_closet/detective{
 	name = "Special Clown Operative's Cabinet"
 	},
+/obj/item/clothing/glasses/hud/security/prescription,
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/security/armory)
