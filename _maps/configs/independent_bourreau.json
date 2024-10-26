@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
-	"map_name": "Bourreau-Class Secure Transport",
+	"map_name": "Bourreau-class Secure Transport",
 	"faction": "/datum/faction/independent",
 	"prefix": "ISSV",
 	"namelists": [
@@ -8,9 +8,9 @@
 		"MYTHOLOGICAL",
 		"WEAPONS"
 	],
-	"map_short_name": "Bourreau-Class",
+	"map_short_name": "Bourreau-class",
 	"map_path": "_maps/shuttles/independent/independent_bourreau.dmm",
-	"description": "The Bourreau-Class is a secure transport vessel for those incriminated by space law. This ship is mostly known for tracking down wanted criminals and putting them on trial. This independent ship, despite looking very comfortable for each party included in the ship, is actually only comfortable for the staff.",
+	"description": "The Bourreau-class is a secure transport vessel for those incriminated by space law. This ship is mostly known for tracking down wanted criminals and putting them on trial. This independent ship, despite looking very comfortable for each party included in the ship, is actually only comfortable for the staff.",
 	"tags": [
 		"RP Focus",
 		"Specialist",
