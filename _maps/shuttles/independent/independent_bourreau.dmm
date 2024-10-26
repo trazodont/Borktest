@@ -2908,8 +2908,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
-/obj/machinery/atmospherics/components/binary/pump/layer2{
-	dir = 4
+/obj/machinery/atmospherics/components/binary/pump/on/layer2{
+	dir = 4;
+	name = "Air to Distro"
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
