@@ -94,6 +94,13 @@
 /obj/item/folder/terragov,
 /turf/open/floor/suns/dark/plain,
 /area/ship/bridge)
+"bR" = (
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering)
 "bV" = (
 /obj/machinery/door/airlock/medical/glass,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -407,6 +414,9 @@
 	},
 /turf/open/floor/plastic,
 /area/ship/medical)
+"gI" = (
+/turf/open/floor/circuit/off,
+/area/ship/bridge)
 "gS" = (
 /turf/open/floor/wood/yew,
 /area/ship/crew/chapel)
@@ -1751,13 +1761,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
-"Ac" = (
-/obj/machinery/power/ship_gravity,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering)
 "Ag" = (
 /obj/machinery/power/terminal,
 /obj/structure/cable{
@@ -2037,6 +2040,19 @@
 	},
 /turf/open/floor/wood/yew,
 /area/ship/crew/chapel)
+"FH" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "FI" = (
 /obj/machinery/rnd/server,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2215,9 +2231,6 @@
 	},
 /turf/open/floor/suns/plain,
 /area/ship/medical/psych)
-"IB" = (
-/turf/open/floor/circuit/off,
-/area/ship/bridge)
 "ID" = (
 /obj/effect/landmark/start/psychologist,
 /turf/open/floor/suns/hatch,
@@ -2466,6 +2479,9 @@
 /area/ship/medical)
 "Lt" = (
 /obj/machinery/power/smes,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "LF" = (
@@ -3112,19 +3128,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/medical/morgue)
-"VE" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/item/radio/intercom/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
 "VS" = (
 /turf/closed/wall/mineral/titanium/interior,
 /area/ship/medical/surgery)
@@ -3460,7 +3463,7 @@ Lt
 ql
 sY
 ql
-Ac
+bR
 PV
 gh
 SE
@@ -4039,7 +4042,7 @@ jj
 VU
 se
 VU
-VE
+FH
 Sw
 Vh
 kq
@@ -4080,7 +4083,7 @@ pp
 EW
 QA
 VW
-IB
+gI
 AJ
 Lp
 Km
