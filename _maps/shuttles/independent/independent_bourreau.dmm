@@ -1560,6 +1560,10 @@
 "vC" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/law_office)
+"vK" = (
+/obj/structure/chair/comfy/blue/directional/east,
+/turf/open/floor/suns/dark/plain,
+/area/ship/bridge)
 "vQ" = (
 /obj/machinery/power/ship_gravity,
 /obj/structure/cable{
@@ -1744,10 +1748,6 @@
 "yI" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/engineering)
-"yY" = (
-/obj/structure/chair/comfy/blue/directional/east,
-/turf/open/floor/suns/dark/plain,
-/area/ship/bridge)
 "zo" = (
 /obj/docking_port/mobile{
 	dir = 4;
@@ -1862,12 +1862,12 @@
 	pixel_y = 32
 	},
 /obj/machinery/airalarm/directional/east,
-/obj/machinery/rnd/production/protolathe/department/medical,
 /obj/machinery/light_switch{
 	dir = 8;
 	pixel_x = 23;
 	pixel_y = 16
 	},
+/obj/machinery/autolathe,
 /turf/open/floor/plastic,
 /area/ship/medical)
 "Bp" = (
@@ -4158,7 +4158,7 @@ AJ
 sE
 Wf
 Fs
-yY
+vK
 VW
 Mg
 Lp
