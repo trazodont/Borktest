@@ -318,6 +318,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/landmark/start/lawyer,
+/obj/structure/chair/comfy/orange/directional/west,
 /turf/open/floor/wood/yew,
 /area/ship/crew/chapel)
 "fx" = (
@@ -789,6 +790,7 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
+/obj/structure/chair/comfy/beige/old/directional/east,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/chapel/office)
 "lJ" = (
@@ -1742,6 +1744,10 @@
 "yI" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/engineering)
+"yY" = (
+/obj/structure/chair/comfy/blue/directional/east,
+/turf/open/floor/suns/dark/plain,
+/area/ship/bridge)
 "zo" = (
 /obj/docking_port/mobile{
 	dir = 4;
@@ -2210,6 +2216,7 @@
 /area/ship/crew/ccommons)
 "HT" = (
 /obj/effect/landmark/start/lawyer,
+/obj/structure/chair/comfy/blue/directional/west,
 /turf/open/floor/wood/yew,
 /area/ship/crew/chapel)
 "HV" = (
@@ -4151,7 +4158,7 @@ AJ
 sE
 Wf
 Fs
-VW
+yY
 VW
 Mg
 Lp
