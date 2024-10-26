@@ -1,0 +1,49 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Interstellar-class Research Vessel",
+	"map_short_name": "Interstellar-class",
+	"faction": "/datum/faction/solgov",
+	"prefix": "SCSV",
+	"namelists": ["GENERAL", "SPACE", "BRITISH_NAVY", "SOLGOV", "MYTHOLOGICAL"],
+	"map_path": "_maps/shuttles/solgov/solgov_interstellar.dmm",
+	"limit": 1,
+	"spawn_time_coeff": 1.5,
+	"officer_time_coeff": 0.5,
+	"job_slots": {
+		"Research Director": {
+			"outfit": "/datum/outfit/job/rd",
+			"officer": true,
+			"slots": 1
+		},
+		"Researcher": {
+			"outfit": "/datum/outfit/job/scientist",
+			"slots": 3
+		},
+		"Roboticist": {
+			"outfit": "/datum/outfit/job/roboticist",
+			"slots": 2
+		},
+		"Medical Researcher":{
+			"outfit": "/datum/outfit/job/doctor",
+			"slots": 1
+		},
+		"Engineer": {
+			"outfit":"/datum/outfit/job/engineer",
+			"slots": 2
+		},
+		"Chemist" :{
+			"outfit":"/datum/outfit/job/chemist",
+			"slots": 1
+		},
+		"Mineral Researcher" :{
+			"outfit": "/datum/outfit/job/miner",
+			"slots": 1
+		},
+		"Research Assistant":{
+			"outfit": "/datum/outfit/job/scientist",
+			"slots": 3
+		}
+	},
+	"enabled": true,
+	"space_spawn": false
+}
