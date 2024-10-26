@@ -161,7 +161,7 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/turf/template_noop,
+/turf/open/floor/engine,
 /area/ship/engineering)
 "cY" = (
 /obj/structure/window/reinforced/fulltile,
@@ -1127,7 +1127,7 @@
 	dir = 8
 	},
 /obj/structure/grille,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/engine,
 /area/ship/engineering)
 "pN" = (
 /obj/machinery/airalarm/directional/west,
@@ -1959,11 +1959,10 @@
 /turf/open/floor/suns/dark/plain,
 /area/ship/medical/surgery)
 "Ea" = (
-/obj/structure/lattice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 4
 	},
-/turf/template_noop,
+/turf/open/floor/engine,
 /area/ship/engineering)
 "Eh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
