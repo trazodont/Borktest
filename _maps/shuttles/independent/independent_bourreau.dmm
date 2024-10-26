@@ -629,6 +629,10 @@
 /obj/structure/closet/secure_closet/miner/unlocked,
 /turf/open/floor/sepia,
 /area/ship/cargo)
+"jH" = (
+/obj/structure/chair/comfy/blue/directional/east,
+/turf/open/floor/suns/dark/plain,
+/area/ship/bridge)
 "jI" = (
 /turf/closed/wall/mineral/titanium/interior,
 /area/ship/cargo)
@@ -872,6 +876,11 @@
 /obj/structure/window,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/ccommons)
+"mR" = (
+/obj/structure/lattice,
+/obj/item/toy/plush/awakenedplushie,
+/turf/open/floor/circuit/off,
+/area/space)
 "mS" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1560,10 +1569,6 @@
 "vC" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/law_office)
-"vK" = (
-/obj/structure/chair/comfy/blue/directional/east,
-/turf/open/floor/suns/dark/plain,
-/area/ship/bridge)
 "vQ" = (
 /obj/machinery/power/ship_gravity,
 /obj/structure/cable{
@@ -1939,6 +1944,11 @@
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/medical)
+"Dz" = (
+/obj/structure/lattice,
+/obj/machinery/autolathe,
+/turf/open/space,
+/area/space)
 "DD" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -3263,6 +3273,10 @@
 /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/security/armory)
+"Xg" = (
+/obj/structure/lattice,
+/turf/closed/wall/mineral/titanium/interior,
+/area/space)
 "Xh" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3515,7 +3529,7 @@ SE
 Qe
 Tu
 pq
-pq
+Dz
 pq
 pq
 bw
@@ -4158,7 +4172,7 @@ AJ
 sE
 Wf
 Fs
-vK
+jH
 VW
 Mg
 Lp
@@ -4219,7 +4233,7 @@ oG
 AJ
 bP
 bN
-Mw
+mR
 Ma
 cC
 rE
@@ -4250,8 +4264,8 @@ Gu
 AO
 uP
 Mw
-pq
-pq
+Xg
+Xg
 AO
 uP
 ol
