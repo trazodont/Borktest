@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/shiptest-ss13/Shiptest/master/_maps/ship_config_schema.json",
+	"map_name": "Bourreau-Class Secure Transport",
+	"faction": "/datum/faction/independent",
+	"prefix": "ISSV",
+	"namelists": [
+		"BEASTS",
+		"MYTHOLOGICAL",
+		"WEAPONS"
+	],
+	"map_short_name": "Bourreau-Class",
+	"map_path": "_maps/shuttles/independent/independent_bourreau.dmm",
+	"description": "The Bourreau-Class is a secure transport vessel for those incriminated by space law. This ship is mostly known for tracking down wanted criminals and putting them on trial. This independent ship, despite looking very comfortable for each party included in the ship, is actually only comfortable for the staff.",
+	"tags": [
+		"RP Focus",
+		"Specialist",
+		"Combat",
+		"Medical",
+		"Generalist"
+	],
+	"starting_funds": 5500,
+	"limit": 1,
+	"job_slots": {
+		"Judge": {
+			"outfit": "/datum/outfit/job/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"Executioner": {
+			"outfit": "/datum/outfit/job/hos",
+			"officer": true,
+			"slots": 1
+		},
+		"Technical Specialist": {
+			"outfit": "/datum/outfit/job/engineer",
+			"slots": 1
+		},
+		"Sergeant": {
+			"outfit": "/datum/outfit/job/warden",
+			"officer": true,
+			"slots": 1
+		},
+		"Security Officer": {
+			"outfit": "/datum/outfit/job/security",
+			"slots": 1
+		},
+		"Lawyer": {
+			"outfit": "/datum/outfit/job/lawyer",
+			"slots": 2
+		},
+		"Quartermaster": {
+			"outfit": "/datum/outfit/job/quartermaster",
+			"slots": 1
+		},
+		"Brig Paramedic": {
+			"outfit": "/datum/outfit/job/brig_phys",
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/doctor",
+			"slots": 1
+		},
+		"Brig Psychologist":{
+			"outfit": "/datum/outfit/job/psychologist",
+			"slots": 1
+		},
+		"Prison Cleaner":{
+			"outfit":"/datum/outfit/job/janitor",
+			"slots": 1
+		},
+		"Special Clown Operative":{
+			"outfit": "/datum/outfit/job/hos",
+			"slots":1,
+			"officer": true
+		},
+		"Long-Term Inmate":{
+			"outfit":"/datum/outfit/job/prisoner",
+			"slots":3
+		}
+	},
+	"enabled": true
+}
