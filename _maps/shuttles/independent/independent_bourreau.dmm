@@ -158,6 +158,9 @@
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
 	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
 /turf/template_noop,
 /area/ship/engineering)
 "cY" = (
@@ -453,19 +456,6 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/security/armory)
-"hL" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/item/radio/intercom/directional/north,
-/turf/open/floor/plasteel/dark,
-/area/ship/security)
 "hM" = (
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer4,
@@ -487,14 +477,15 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/ccommons)
-"hX" = (
-/obj/machinery/atmospherics/components/binary/volume_pump{
-	dir = 4
-	},
-/turf/closed/wall/mineral/titanium/interior,
-/area/ship/engineering)
 "hZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/statue/sandstone/venus{
+	dir = 8
+	},
+/obj/structure/window,
+/obj/structure/window{
 	dir = 8
 	},
 /turf/open/floor/plasteel/lightgrey,
@@ -691,12 +682,6 @@
 /obj/item/kirbyplants/fullysynthetic,
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/security/armory)
-"kr" = (
-/obj/machinery/computer/cargo{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space)
 "ku" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -873,21 +858,31 @@
 /obj/item/clothing/under/rank/security,
 /turf/closed/wall/mineral/titanium/interior,
 /area/ship/security/prison)
-"mA" = (
-/obj/machinery/power/ship_gravity,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plasteel/tech/techmaint,
-/area/ship/engineering)
 "mG" = (
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/structure/statue/sandstone/venus,
+/obj/structure/table/wood/fancy,
+/obj/item/statuebust{
+	pixel_y = 16
+	},
+/obj/structure/window,
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/ccommons)
+"mS" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/item/radio/intercom/directional/north,
+/turf/open/floor/plasteel/dark,
+/area/ship/security)
 "mV" = (
 /obj/structure/table/glass,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -925,14 +920,10 @@
 /turf/open/floor/plasteel/lightgrey,
 /area/ship/crew/janitor)
 "nv" = (
-/obj/machinery/power/terminal{
-	dir = 8
+/obj/machinery/atmospherics/components/binary/volume_pump{
+	dir = 4
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/reagent_dispensers/foamtank,
-/turf/open/floor/plasteel/tech/techmaint,
+/turf/closed/wall/mineral/titanium/interior,
 /area/ship/engineering)
 "nx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1567,6 +1558,13 @@
 "vC" = (
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/law_office)
+"vQ" = (
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering)
 "vW" = (
 /obj/effect/decal/cleanable/blood/innards,
 /obj/machinery/button/crematorium{
@@ -1666,6 +1664,12 @@
 /obj/machinery/door/airlock/security,
 /turf/open/floor/wood/ebony,
 /area/ship/security)
+"xn" = (
+/obj/machinery/computer/cargo{
+	dir = 4
+	},
+/turf/open/space/basic,
+/area/space)
 "xr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -1871,6 +1875,9 @@
 /obj/structure/grille,
 /turf/open/floor/plastic,
 /area/ship/medical)
+"Br" = (
+/turf/open/floor/circuit/off,
+/area/ship/bridge)
 "Bx" = (
 /obj/machinery/vending/medical,
 /turf/open/floor/plastic,
@@ -2109,9 +2116,6 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
-"Gz" = (
-/turf/open/floor/circuit/off,
-/area/ship/bridge)
 "GF" = (
 /obj/structure/closet/secure_closet/quartermaster,
 /obj/item/clothing/glasses/hud/diagnostic/sunglasses,
@@ -2756,6 +2760,16 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/plastic,
 /area/ship/medical/surgery)
+"Pd" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/reagent_dispensers/foamtank,
+/turf/open/floor/plasteel/tech/techmaint,
+/area/ship/engineering)
 "Pi" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3110,6 +3124,17 @@
 /obj/machinery/holopad/emergency/engineering,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
+"UW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/statue/sandstone/venus,
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/window,
+/turf/open/floor/plasteel/lightgrey,
+/area/ship/crew/ccommons)
 "UZ" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
@@ -3298,13 +3323,13 @@
 /obj/machinery/door/window/eastright{
 	name = "Engine Access"
 	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
 /obj/machinery/door/poddoor{
 	id = "bourreau_thrusters";
 	name = "Thruster Blast Door";
 	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
 	},
 /turf/open/floor/engine,
 /area/ship/engineering)
@@ -3455,7 +3480,7 @@ xi
 Ys
 yI
 Ld
-hX
+nv
 Tu
 Tu
 pq
@@ -3483,8 +3508,8 @@ Ag
 Lt
 ql
 sY
-nv
-mA
+Pd
+vQ
 PV
 gh
 SE
@@ -3978,7 +4003,7 @@ Qt
 Cz
 lJ
 AW
-hZ
+UW
 ys
 DJ
 DJ
@@ -4063,7 +4088,7 @@ jj
 VU
 se
 VU
-hL
+mS
 Sw
 Vh
 kq
@@ -4104,7 +4129,7 @@ pp
 EW
 QA
 VW
-Gz
+Br
 AJ
 Lp
 Km
@@ -4300,7 +4325,7 @@ PD
 PD
 PD
 PD
-kr
+xn
 PD
 PD
 "}
