@@ -1664,12 +1664,6 @@
 /obj/machinery/door/airlock/security,
 /turf/open/floor/wood/ebony,
 /area/ship/security)
-"xn" = (
-/obj/machinery/computer/cargo{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space)
 "xr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
@@ -4322,7 +4316,7 @@ PD
 PD
 PD
 PD
-xn
+PD
 PD
 PD
 "}
