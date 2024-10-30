@@ -35,32 +35,32 @@
 
 /obj/projectile/bullet/c10mm
 	name = "10mm bullet"
-	damage = 25
+	damage = 30
 	armour_penetration = -20
 
 /obj/projectile/bullet/c10mm/surplus
 	name = "10mm surplus bullet"
-	damage = 20
+	damage = 25
 
 /obj/projectile/bullet/c10mm/ap
 	name = "10mm armor-piercing bullet"
-	damage = 20
+	damage = 25
 	armour_penetration = 20
 
 /obj/projectile/bullet/c10mm/hp
 	name = "10mm hollow point bullet"
-	damage = 40
+	damage = 445
 	armour_penetration = -50
 
 /obj/projectile/bullet/incendiary/c10mm
 	name = "10mm incendiary bullet"
-	damage = 15
+	damage = 20
 	armour_penetration = -20
 	fire_stacks = 2
 
 /obj/projectile/bullet/c10mm/rubber
 	name = "10mm rubber bullet"
-	damage = 7
+	damage = 10
 	stamina = 38
 	armour_penetration = -40
 

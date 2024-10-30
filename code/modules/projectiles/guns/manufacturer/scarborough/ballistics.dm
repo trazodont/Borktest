@@ -55,9 +55,9 @@
 	)
 
 
-	spread = 6 //becuase its compact, spread is slightly worse
-	spread_unwielded = 9
-	recoil_unwielded = 2
+	spread = 7 //becuase its compact, spread is slightly worse
+	spread_unwielded = 10
+	recoil_unwielded = 4
 
 EMPTY_GUN_HELPER(automatic/pistol/ringneck)
 
@@ -70,9 +70,9 @@ EMPTY_GUN_HELPER(automatic/pistol/ringneck)
 
 	w_class = WEIGHT_CLASS_NORMAL
 
-	spread = 5 //this one is normal sized, thus in theory its better, in theory at least
-	spread_unwielded = 7
-	recoil_unwielded = 3
+	spread = 6 //this one is normal sized, thus in theory its better, in theory at least
+	spread_unwielded = 8
+	recoil_unwielded = 4
 
 EMPTY_GUN_HELPER(automatic/pistol/ringneck/indie)
 
