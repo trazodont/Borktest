@@ -19,10 +19,6 @@
 #define COMSIG_ATOM_CONTENTS_WEIGHT_CLASS_CHANGED "atom_contents_weight_class_changed"
 /// Sent from /obj/item/attack_atom(): (atom/attacked_atom, mob/living/user)
 #define COMSIG_ITEM_POST_ATTACK_ATOM "item_post_attack_atom"
-/// Sent from /obj/item/update_weight_class(). (old_w_class, new_w_class)
-#define COMSIG_ITEM_WEIGHT_CLASS_CHANGED "item_weight_class_changed"
-/// Sent from /obj/item/update_weight_class(), to it's loc. (obj/item/changed_item, old_w_class, new_w_class)
-#define COMSIG_ATOM_CONTENTS_WEIGHT_CLASS_CHANGED "atom_contents_weight_class_changed"
 ///from base of datum/storage/handle_enter(): (datum/storage/storage)
 #define COMSIG_ITEM_STORED "item_stored"
 ///from base of datum/storage/handle_exit(): (datum/storage/storage)
