@@ -171,11 +171,11 @@
 	eject_sound = 'sound/weapons/gun/smg/smg_unload.ogg'
 	eject_empty_sound = 'sound/weapons/gun/smg/smg_unload.ogg'
 
-	spread = 7
-	spread_unwielded = 10
+	spread = 8
+	spread_unwielded = 12
 
-	recoil = 0
-	recoil_unwielded = 4
+	recoil = 1
+	recoil_unwielded = 6
 
 	wield_delay = 0.4 SECONDS
 
