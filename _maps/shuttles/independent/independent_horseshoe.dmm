@@ -59,6 +59,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "eZ" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "fb" = (
@@ -71,7 +74,9 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "fi" = (
@@ -201,6 +206,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "no" = (
@@ -447,8 +453,13 @@
 	pixel_y = 4;
 	pixel_x = -4
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/hangar/plasteel,
 /area/ship/crew)
+"BN" = (
+/obj/structure/sign/poster/random,
+/turf/closed/wall/r_wall,
+/area/ship/cargo)
 "Cc" = (
 /obj/machinery/light/dim/directional/south,
 /obj/structure/cable{
@@ -570,6 +581,11 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/machinery/light_switch{
+	pixel_x = 19;
+	pixel_y = 11;
+	dir = 8
+	},
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "Ly" = (
@@ -746,17 +762,14 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "Xt" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/components/unary/vent_pump/high_volume/on/layer2{
-	dir = 8
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
@@ -857,7 +870,7 @@ rU
 IA
 IA
 uK
-TA
+BN
 Ka
 Ka
 "}
@@ -891,7 +904,7 @@ Ka
 Ka
 Ka
 Ka
-TA
+BN
 rU
 cs
 cs
