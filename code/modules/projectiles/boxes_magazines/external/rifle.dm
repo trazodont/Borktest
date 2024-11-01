@@ -5,7 +5,7 @@
 	base_icon_state = "75"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
-	max_ammo = 10
+	max_ammo = 8
 
 /obj/item/ammo_box/magazine/m10mm_ringneck/rifle/update_icon_state()
 	. = ..()

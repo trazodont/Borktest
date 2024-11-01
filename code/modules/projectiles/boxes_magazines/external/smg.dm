@@ -63,7 +63,7 @@
 	base_icon_state = "mongrel_mag"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
-	max_ammo = 24
+	max_ammo = 20
 
 /obj/item/ammo_box/magazine/smgm10mm/update_icon_state()
 	. = ..()
