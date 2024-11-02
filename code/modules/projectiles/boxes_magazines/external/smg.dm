@@ -58,7 +58,7 @@
 
 /obj/item/ammo_box/magazine/smgm10mm
 	name = "Mongrel magazine (10mm)"
-	desc = "A 24-round magazine for the SKM-44v. These rounds do moderate damage, but struggle against armor."
+	desc = "A 20-round magazine for the SKM-44v. These rounds do moderate damage, but struggle against armor."
 	icon_state = "mongrel_mag-24"
 	base_icon_state = "mongrel_mag"
 	ammo_type = /obj/item/ammo_casing/c10mm
