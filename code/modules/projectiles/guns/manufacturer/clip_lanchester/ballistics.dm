@@ -24,7 +24,7 @@
 	load_empty_sound = 'sound/weapons/gun/pistol/candor_reload.ogg'
 	eject_sound = 'sound/weapons/gun/pistol/candor_unload.ogg'
 	eject_empty_sound = 'sound/weapons/gun/pistol/candor_unload.ogg'
-	recoil_unwielded = 3
+	recoil_unwielded = 4
 
 /obj/item/gun/ballistic/automatic/pistol/cm23/no_mag
 	default_ammo_type = FALSE
@@ -36,7 +36,7 @@
 	base_icon_state = "cm23_mag"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
-	max_ammo = 10
+	max_ammo = 8
 
 /obj/item/ammo_box/magazine/cm23/update_icon_state()
 	. = ..()
