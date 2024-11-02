@@ -14,10 +14,11 @@
 /obj/projectile/bullet/c38
 	name = ".38 bullet"
 	damage = 20
-	armour_penetration = -20
+	armour_penetration = -10
 
 /obj/projectile/bullet/c38/surplus
 	damage = 15
+	armour_penetration = -20
 
 /obj/projectile/bullet/c38/match
 	name = ".38 match bullet"

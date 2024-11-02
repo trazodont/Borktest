@@ -3,11 +3,12 @@
 /obj/projectile/bullet/c9mm
 	name = "9mm bullet"
 	damage = 20
-	armour_penetration = -20
+	armour_penetration = -15
 
 /obj/projectile/bullet/c9mm/surplus
 	name = "9mm surplus bullet"
 	damage = 15
+	armour_penetration = -25
 
 /obj/projectile/bullet/c9mm/ap
 	name = "9mm armor-piercing bullet"
@@ -36,11 +37,12 @@
 /obj/projectile/bullet/c10mm
 	name = "10mm bullet"
 	damage = 30
-	armour_penetration = -20
+	armour_penetration = -10
 
 /obj/projectile/bullet/c10mm/surplus
 	name = "10mm surplus bullet"
 	damage = 25
+	armour_penetration = -20
 
 /obj/projectile/bullet/c10mm/ap
 	name = "10mm armor-piercing bullet"
@@ -69,11 +71,12 @@
 /obj/projectile/bullet/c45
 	name = ".45 bullet"
 	damage = 25
-	armour_penetration = -20
+	armour_penetration = -10
 
 /obj/projectile/bullet/c45/surplus
 	name = ".45 surplus bullet"
 	damage = 20
+	armour_penetration = -20
 
 /obj/projectile/bullet/c45/ap
 	name = ".45 armor-piercing bullet"
