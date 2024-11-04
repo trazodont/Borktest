@@ -33,7 +33,7 @@
 
 /datum/supply_pack/ammo/m10mm_mag
 	name = "10mm ringneck Magazine Crate"
-	desc = "Contains a 10mm magazine for the ringneck pistol, containing ten rounds."
+	desc = "Contains a 10mm magazine for the ringneck pistol, containing eight rounds."
 	contains = list(/obj/item/ammo_box/magazine/m10mm_ringneck)
 	cost = 500
 

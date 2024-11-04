@@ -1,7 +1,7 @@
 //########### PISTOLS ###########//
 /obj/item/gun/ballistic/automatic/pistol/cm23
 	name = "\improper CM-23"
-	desc = "CLIP's standard service pistol. 10 rounds of 10mm ammunition make the CM-23 deadlier than many other service pistols, but its weight and bulk have made it unpopular as a sidearm. It has largely been phased out outside of specialized units and patrols on the fringes of CLIP space. Chambered in 10mm."
+	desc = "CLIP's standard service pistol. 8 rounds of 10mm ammunition make the CM-23 deadlier than many other service pistols, but its weight and bulk have made it unpopular as a sidearm. It has largely been phased out outside of specialized units and patrols on the fringes of CLIP space. Chambered in 10mm."
 	icon = 'icons/obj/guns/manufacturer/clip_lanchester/48x32.dmi'
 	lefthand_file = 'icons/obj/guns/manufacturer/clip_lanchester/lefthand.dmi'
 	righthand_file = 'icons/obj/guns/manufacturer/clip_lanchester/righthand.dmi'
@@ -31,7 +31,7 @@
 
 /obj/item/ammo_box/magazine/cm23
 	name = "CM-23 pistol magazine (10mm)"
-	desc = "An 10-round magazine magazine designed for the CM-23 pistol. These rounds do moderate damage, but struggle against armor."
+	desc = "An 8-round magazine magazine designed for the CM-70 pistol. These rounds do moderate damage, but struggle against armor."
 	icon_state = "cm23_mag-1"
 	base_icon_state = "cm23_mag"
 	ammo_type = /obj/item/ammo_casing/c10mm
