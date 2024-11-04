@@ -1,11 +1,11 @@
 /obj/item/ammo_box/magazine/m10mm_ringneck/rifle
 	name = "rifle magazine (10mm)"
-	desc = "A well-worn, 10-round magazine for the surplus rifle. These rounds do moderate damage, but struggle against armor."
+	desc = "A well-worn, 8-round magazine for the surplus rifle. These rounds do moderate damage, but struggle against armor."
 	icon_state = "75-8"
 	base_icon_state = "75"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
-	max_ammo = 10
+	max_ammo = 8
 
 /obj/item/ammo_box/magazine/m10mm_ringneck/rifle/update_icon_state()
 	. = ..()
