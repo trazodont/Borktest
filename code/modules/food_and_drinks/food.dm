@@ -50,3 +50,7 @@
 			if((foodtype & BREAKFAST) && world.time - SSticker.round_start_time < STOP_SERVING_BREAKFAST)
 				SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "breakfast", /datum/mood_event/breakfast)
 			last_check_time = world.time
+
+/obj/item/reagent_containers/food/proc/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/badrecipe, rand(20 SECONDS, 30 SECONDS), FALSE)
+	return

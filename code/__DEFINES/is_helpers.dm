@@ -243,3 +243,9 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 	/obj/item/book,
 	/obj/item/spellbook,
 	/obj/item/storage/book)))
+
+#define ICON_SIZE_ALL 32
+/// The X/Width dimension of ICON_SIZE. This will more than likely be the bigger axis.
+#define ICON_SIZE_X 32
+/// The Y/Height dimension of ICON_SIZE. This will more than likely be the smaller axis.
+#define ICON_SIZE_Y 32

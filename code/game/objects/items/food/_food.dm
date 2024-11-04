@@ -41,6 +41,7 @@
 	make_processable()
 	make_bakeable()
 	make_leave_trash()
+	make_grillable()
 
 ///This proc adds the edible component, overwrite this if you for some reason want to change some specific args like callbacks.
 /obj/item/food/proc/make_edible()
@@ -70,4 +71,17 @@
 	if(trash_type)
 		AddElement(/datum/element/food_trash, trash_type)
 	return
+
+///This proc handles grillable components, overwrite if you want different grill results etc.
+/obj/item/food/proc/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/reagent_containers/food/snacks/badrecipe, rand(20 SECONDS, 30 SECONDS), FALSE)
+	return
+
+///returns if something can be consumed, drink or food
+/proc/IsEdible(obj/item/thing)
+	if(!istype(thing))
+		return FALSE
+	if(IS_EDIBLE(thing))
+		return TRUE
+	return FALSE
 
