@@ -30,7 +30,7 @@
 	item_state = "moistnugget"
 	weapon_weight = WEAPON_HEAVY
 	mag_type = /obj/item/ammo_box/magazine/m10mm_ringneck/rifle
-	fire_delay = 0.5 SECONDS
+	fire_delay = 0.65 SECONDS
 	burst_size = 1
 	w_class = WEIGHT_CLASS_HUGE
 	slot_flags = ITEM_SLOT_BACK
