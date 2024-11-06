@@ -248,13 +248,13 @@
 	icon_state = "backpack_close"
 
 /atom/movable/screen/close/Initialize(mapload, new_master)
- 	. = ..()
- 	master = new_master
+	. = ..()
+	master = new_master
 
 /atom/movable/screen/close/Click()
- 	var/datum/component/storage/S = master
- 	S.ui_hide(usr)
- 	return TRUE
+	var/datum/component/storage/S = master
+	S.ui_hide(usr)
+	return TRUE
 
 /atom/movable/screen/drop
 	name = "drop"

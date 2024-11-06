@@ -193,12 +193,12 @@
 	return TRUE
 
 /obj/machinery/oven/proc/update_baking_audio()
-    if(!oven_loop)
-        return
-    if(appears_active())
-        oven_loop.start()
-    else
-        oven_loop.stop()
+	if(!oven_loop)
+		return
+	if(appears_active())
+		 oven_loop.start()
+	else
+		oven_loop.stop()
 
 ///Updates the smoke state to something else, setting particles if relevant
 /obj/machinery/oven/proc/set_smoke_state(new_state)

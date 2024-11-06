@@ -24,7 +24,7 @@
 	make_bakeable()
 
 /obj/item/reagent_containers/food/proc/make_bakeable()
-    return
+	return
 
 /obj/item/reagent_containers/food/proc/checkLiked(fraction, mob/M)
 	if(last_check_time + 50 < world.time)
