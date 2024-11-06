@@ -491,7 +491,6 @@
 	icon_living = "narsian"
 	icon_dead = "narsian_dead"
 	faction = list("neutral", "cult")
-	gold_core_spawnable = NO_SPAWN
 	nofur = TRUE
 	unique_pet = TRUE
 	held_state = "narsian"
