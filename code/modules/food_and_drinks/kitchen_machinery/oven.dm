@@ -196,7 +196,7 @@
 	if(!oven_loop)
 		return
 	if(appears_active())
-		 oven_loop.start()
+		oven_loop.start()
 	else
 		oven_loop.stop()
 
