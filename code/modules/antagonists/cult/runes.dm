@@ -824,7 +824,6 @@ structure_check() searches for nearby cultist structures required for the invoca
 		var/mob/living/carbon/human/cult_ghost/new_human = new(T)
 		new_human.real_name = ghost_to_spawn.real_name
 		new_human.alpha = 150 //Makes them translucent
-		new_human.equipOutfit(/datum/outfit/ghost_cultist) //give them armor
 		new_human.apply_status_effect(STATUS_EFFECT_SUMMONEDGHOST) //ghosts can't summon more ghosts
 		new_human.see_invisible = SEE_INVISIBLE_OBSERVER
 		ghosts++
