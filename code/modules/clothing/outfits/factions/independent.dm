@@ -144,9 +144,22 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag
 	courierbag = /obj/item/storage/backpack/messenger
 
+/datum/outfit/job/independent/captain/trucker // For space truckers. Prolly need to define an outfit for their first mate/trucking buddy.
+	name = "Captain (Trucker)"
+	uniform = /obj/item/clothing/under/utility
+	glasses = /obj/item/clothing/glasses/sunglasses
+	gloves = /obj/item/clothing/gloves/fingerless
+	head = /obj/item/clothing/head/soft/black
+	shoes = /obj/item/clothing/shoes/workboots
+	suit = /obj/item/clothing/suit/jacket
+
+	backpack = /obj/item/storage/backpack
+	satchel = /obj/item/storage/backpack/satchel
+	duffelbag = /obj/item/storage/backpack/duffelbag
+	courierbag = /obj/item/storage/backpack/messenger
+
 /datum/outfit/job/independent/captain/pirate
 	name = "Captain (Pirate)"
-
 	ears = /obj/item/radio/headset/pirate/captain
 	uniform = /obj/item/clothing/under/costume/pirate
 	shoes = /obj/item/clothing/shoes/jackboots
